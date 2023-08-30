@@ -1,0 +1,3013 @@
+$("#submit-form").submit((e)=>{
+    e.preventDefault()
+    $.ajax({
+       
+        //rgk-imp-mq-mailsheet: 
+        // url : "https://script.google.com/macros/s/AKfycbyTwCnZqMlTEDGESd_r5m-kYSw3p5xPrnfHD2EtfpwJxtA3GcD7Sr9K7oty9UrKkPin/exec",
+
+        //rgk-imp-mailgoogle-sheet-for-Blis (reservations@touchwoodbliss.com)
+        // url : "https://script.google.com/macros/s/AKfycbwa2yZvqLCpsum9hVICFsZuolg_adl4E6RCPsbhJa-lsbTFvmDVSD53-GtL9MIQEnbv/exec",
+        url : "https://script.google.com/macros/s/AKfycbzdmnlQv5sv8E7E2iNWjm0Jt1Q80XNp2gID2LbgA8CzECHEeuZv5OarCdqM9yj86HIS/exec",
+      
+        data:$("#submit-form").serialize(),
+        method:"post",
+        success:function (response){
+            alert("Thank you for getting in touch! We will look over your message and get back to you soon.")
+            window.location.reload()
+            $('.clearFields').val(''); /* rgk-add-this-code-to-clear-fielsd-after-submition */
+            
+        },
+        error:function (err){
+            alert("Contact details not sent.")
+            
+
+        }
+    })
+})
+
+import React from 'react'
+import { Link } from 'react-router-dom'
+
+
+export default function () {
+  return (
+      <div>
+	<div id="main_veil" class="has_transition_1500 hidden"></div>
+		<div id="side_mobile" class="has_transition_800 mobile_only hidden transform_all">
+			<Link href="index.html"><img class="logo_mobile" src="style/images/mobile/logo_mobile.png"/></Link> 
+			<div class="menu_controller">
+				<div class="lines">
+					<hr class="_1"/>
+					<hr class="_2"/>
+					<hr class="_3"/>
+				</div>
+			</div>
+
+			<Link href="https://wa.me/917030666444" target="_blank"><img src="style/images/mobile/whatsapp.png" class="icon1"/></Link>
+			<Link href="tel:7030060622"><img src="style/images/mobile/call.png" class="icon2"/></Link> 
+
+			<Link href="https://live.ipms247.com/booking/book-rooms-touchwoodbliss" target="_blank"><img src="style/images/mobile/book_now.png" class="icon3"/></Link> 
+			
+		</div>
+		<div id="menu_mobile" class="mobile_only hidden has_transition_1500 transform_all">
+			<div id="menu_mobile_scroller" class="has_transition_1000">
+			
+			<div class="first_panel">
+
+				<div class="upper">
+
+					
+					<Link class="">
+					</Link>
+					<p id="mobile_lang_button" class="menu_small_button smaller only">
+						<Link class="no_link phone_ico" href="tel:7030060622"><img src="style/images/mobile/phone_ico.png"/></Link>
+						 </p>
+							
+						
+				</div>
+				<div class="center">
+					<Link href="index.html" class="menu_small_button smaller">Home</Link>
+					<Link href="aboutus.html" class="menu_small_button smaller">About</Link> {/* <!-- mbl --> */}
+					<Link href="connect.html" class="menu_small_button smaller">Connect</Link>
+					<Link href="faq.html" class="menu_small_button smaller">FAQ</Link>
+					
+					<Link href="policy.html" class="menu_small_button smaller">Privacy Policy</Link>
+	
+					<div id="chapters">
+						<div class="chapter">						
+							<p class="par_number has_transition_800">1.</p>
+							<ul style={{"margin-left": "8px","letter-spacing":"1px","font-size":"3.5vw","line-height": "5vw"}}>
+								<li style={{"font-weight": "600"}}>STAY &amp; DINING</li>
+								<li ><Link href="rooms/courtyard-villas.html"> COURTYARD VILLAS </Link></li>
+								<li ><Link href="rooms/glamping_tents.html">GLAMPING TENTS</Link></li>
+								<li ><Link href="rooms/farmsyde-villas.html" class="">FARMSYDE VILLAS</Link></li>
+								<li ><Link href="rooms/restaurant.html" class="">RESTAURANT</Link></li>
+								<li ><Link href="rootscafe.html" class="">ROOTS CAFE</Link></li>
+								<li ><br/></li>
+							  </ul>
+						</div>
+						<div class="chapter">
+							<p class="par_number has_transition_800">2.</p>
+							<ul style={{"margin-left": "8px","letter-spacing":"1px","font-size":"3.5vw","line-height": "5vw"}}>
+								<li style={{"font-weight": "600"}}>ACTIVITIES &amp; DAY OUTING</li>
+								<li ><Link href="activities/indoor.html">INDOOR</Link></li>
+								<li ><Link href="activities/outdoor.html">OUTDOOR</Link></li>
+								<li ><Link href="activities/nature.html">NATURE</Link></li>
+								<li > <Link href="activities/day_outing.html">DAY OUTING</Link></li>
+								<li ><Link href="activities/camping-tents.html">MOUNTAIN CAMPING</Link></li>
+								
+							  <li ><br/></li>
+							  </ul>
+						</div>
+						<div class="chapter">
+							<p class="par_number has_transition_800">3.</p>
+							  <li ><br/></li>
+							 
+						</div>
+						<div class="chapter">
+							<p class="par_number has_transition_800">4.</p>
+							<ul style={{"margin-left": "8px","letter-spacing":"1px","font-size":"3.5vw","line-height": "5vw"}}>
+								<li style={{"font-weight": "600"}}>MEMBERSHIP</li>
+								 <li style={{"color": "#ACACAE"}}>COMING SOON</li>
+								<li >CAMPING TENTS</li>
+								<li >FARMSYDE VILLAS </li>
+								<li >RESTAURANT</li>
+							  <li ></li> 
+							  </ul>
+						</div>
+					</div>
+				</div>
+				<div class="lower">
+					<div id="mobile_socials">
+							<Link class="social_icon" target="_blank" href="https://www.facebook.com/touchwoodbliss/"><img src="style/images/mobile/f_ico.png"/></Link>
+							<Link class="social_icon" target="_blank" href="https://www.instagram.com/touchwoodbliss/?igshid=9vh16x360dfy"><img src="style/images/mobile/insta_ico.png"/></Link>
+					</div>
+					<p class="copyright">© 2022 Touchwood Bliss - All rights reserved</p>
+				</div>
+			</div>
+	
+	
+			<div id="section_panels" class="has_transition_1500" style={{"display": "none"}}>
+				<div id="mobile_panels_container" class="has_transition_1500">
+				<div class="section_panel _1" >
+					<div class="section_track has_transition_1000">
+					<div class="chapter">
+							<p class="par_number has_transition_800">1.</p>
+							<h2 class="menu_title has_transition_800">HOTEL</h2>
+							<Link class="no_link phone_ico" href="tel:0898131333"><img src="style/images/mobile/phone_ico.png"/></Link>
+					</div>
+					<div class="tracking">
+						<div class="track"></div>
+						<div class="filler has_transition_800"></div>
+					</div>
+					</div>
+					
+					<div class="paragraphs">
+						<div class="paragraph_container has_transition_1000">
+							<Link href="#" class="menu_titles">
+								<h2 class="menu_title has_transition_800">R1 - LOCATION &amp; POSITION</h2>
+								<h3 class="menu_subtitle has_transition_800">on the bustling amalfi coast</h3>
+								<div class="underline has_transition_600_inout"></div>
+							</Link>
+							<Link href="#" class="menu_titles">
+								<h2 class="menu_title has_transition_800">FACILITIES AND SERVICES</h2>
+								<h3 class="menu_subtitle has_transition_800">the extras that count</h3>
+															<div class="underline has_transition_600_inout"></div>
+								
+							</Link>
+							<Link href="#" class="menu_titles">
+								<h2 class="menu_title has_transition_800">LIFESTYLE</h2>
+								<h3 class="menu_subtitle has_transition_800">design and relaxation</h3>
+															<div class="underline has_transition_600_inout"></div>
+								
+							</Link>
+							<Link href="#" class="menu_titles">
+								<h2 class="menu_title has_transition_800">TRAVEL GUIDE</h2>
+								<h3 class="menu_subtitle has_transition_800">our guide to the amalfi coast</h3>
+															<div class="underline has_transition_600_inout"></div>
+								
+							</Link>
+						</div>
+					</div>
+					<div class="lower">
+						<div class="pic">
+							<img class="full_width" src="style/images/mobile/hotel_menupic.jpg"/>
+						</div>
+						<p class="next_chapter menu_small_button smaller">Rooms &amp; Suites <img src="style/images/right_arrow.png"/></p>
+					</div>
+				</div>
+				<div class="section_panel _2" >
+					<div class="section_track has_transition_1000">
+					<div class="chapter">
+							<p class="par_number has_transition_800">2.</p>
+							<h2 class="menu_title has_transition_800">Rooms &amp; Suites</h2>
+							<Link class="no_link phone_ico" href="tel:0898131333"><img src="style/images/mobile/phone_ico.png"/></Link>
+					</div>
+					<div class="tracking">
+						<div class="track"></div>
+						<div class="filler has_transition_800"></div>
+					</div>
+					</div>
+					<img class="text_shadow_upper no_opacity has_transition_800" src="style/images/home/text_shadow_upper.png"/>
+					
+					<div id="rooms_mob_scrollbar" class="menu_panel_scrollbar">
+							<div class="pointer has_transition_1000"></div>
+					</div>
+					<div class="paragraphs">
+						<div class="paragraph_container has_transition_1000">
+						<Link href="#" class="menu_titles">
+								<h2 class="menu_title has_transition_800">ROOMS OVERVIEW</h2>
+								<h3 class="menu_subtitle has_transition_800">Private Retreats</h3>
+															<div class="underline has_transition_600_inout"></div>
+								
+							</Link>
+											
+						<Link href="#" class="menu_titles">
+							<h2 class="menu_title has_transition_800">Junior Suite</h2>
+							<h3 class="menu_subtitle has_transition_800">the <span class="as_pic">ethos</span> of casa angelina</h3>
+														<div class="underline has_transition_600_inout"></div>
+							
+						</Link>
+											
+						<Link href="#" class="menu_titles">
+							<h2 class="menu_title has_transition_800">Grand De Luxe</h2>
+							<h3 class="menu_subtitle has_transition_800">our <span class="as_pic">style</span> statement</h3>
+														<div class="underline has_transition_600_inout"></div>
+							
+						</Link>
+											
+						<Link href="#" class="menu_titles">
+							<h2 class="menu_title has_transition_800">Deluxe Corner Sea View</h2>
+							<h3 class="menu_subtitle has_transition_800">new accomodation for 2020</h3>
+														<div class="underline has_transition_600_inout"></div>
+							
+						</Link>
+											
+						<Link href="#" class="menu_titles">
+							<h2 class="menu_title has_transition_800">Terrace</h2>
+							<h3 class="menu_subtitle has_transition_800">slow living</h3>
+														<div class="underline has_transition_600_inout"></div>
+							
+						</Link>
+											
+						<Link href="#" class="menu_titles">
+							<h2 class="menu_title has_transition_800">Relaxing</h2>
+							<h3 class="menu_subtitle has_transition_800">tranquil beauty</h3>
+														<div class="underline has_transition_600_inout"></div>
+							
+						</Link>
+											
+						<Link href="#" class="menu_titles">
+							<h2 class="menu_title has_transition_800">Romantic</h2>
+							<h3 class="menu_subtitle has_transition_800">the ultimate romantic getaway</h3>
+														<div class="underline has_transition_600_inout"></div>
+							
+						</Link>
+											
+						<Link href="#" class="menu_titles">
+							<h2 class="menu_title has_transition_800">Canopy</h2>
+							<h3 class="menu_subtitle has_transition_800">a most charming space</h3>
+														<div class="underline has_transition_600_inout"></div>
+							
+						</Link>
+											
+						<Link href="#" class="menu_titles">
+							<h2 class="menu_title has_transition_800">Classic</h2>
+							<h3 class="menu_subtitle has_transition_800">cozy chic</h3>
+														<div class="underline has_transition_600_inout"></div>
+							
+						</Link>
+											
+						<Link href="#" class="menu_titles">
+							<h2 class="menu_title has_transition_800">Single</h2>
+							<h3 class="menu_subtitle has_transition_800">a truly private experience</h3>
+														<div class="underline has_transition_600_inout"></div>
+							
+						</Link>
+											
+						<Link href="#" class="menu_titles">
+							<h2 class="menu_title has_transition_800">Eaudesea Experience</h2>
+							<h3 class="menu_subtitle has_transition_800">where sea and sky hypnotize your soul</h3>
+														<div class="underline has_transition_600_inout"></div>
+							
+						</Link>
+											</div>
+					</div>
+					<div class="lower">
+						<div class="pic">
+							<img src="style/images/mobile/text_shadow.png"/>
+							<img class="full_width" src="style/images/mobile/rooms.jpg"/>
+						</div>
+						<p class="next_chapter menu_small_button smaller">Dining <img src="style/images/right_arrow.png"/></p>
+					</div>
+				</div>
+				<div class="section_panel _3">
+					<div class="section_track has_transition_1000">
+					<div class="chapter">
+							<p class="par_number has_transition_800">3.</p>
+							<h2 class="menu_title has_transition_800">Dining</h2>
+							<Link class="no_link phone_ico" href="tel:0898131333"><img src="style/images/mobile/phone_ico.png"/></Link>
+					</div>
+					<div class="tracking">
+						<div class="track"></div>
+						<div class="filler has_transition_800"></div>
+					</div>
+					
+				</div>
+				<div id="dining_mob_scrollbar" class="menu_panel_scrollbar">
+							<div class="pointer has_transition_1000"></div>
+					</div>
+					<div class="paragraphs">
+						<div class="paragraph_container has_transition_1000">
+							<Link href="#" class="menu_titles">
+								<h2 class="menu_title has_transition_800">DINING OVERVIEW</h2>
+								<h3 class="menu_subtitle has_transition_800">Fine dining, Amalfi-style</h3>
+								<div class="underline has_transition_600_inout"></div>
+								
+							</Link>
+												<Link href="#" class="menu_titles">
+							<h2 class="menu_title has_transition_800">Taste</h2>
+							<h3 class="menu_subtitle has_transition_800">a mediterranean feast</h3>
+														<div class="underline has_transition_600_inout"></div>
+							
+						</Link>
+											<Link href="#" class="menu_titles">
+							<h2 class="menu_title has_transition_800">Un Piano Nel Cielo</h2>
+							<h3 class="menu_subtitle has_transition_800">fine dining at the high</h3>
+														<div class="underline has_transition_600_inout"></div>
+							
+						</Link>
+											<Link href="#" class="menu_titles">
+							<h2 class="menu_title has_transition_800">Wine Cellar</h2>
+							<h3 class="menu_subtitle has_transition_800">an extensive wine&nbsp;selection</h3>
+														<div class="underline has_transition_600_inout"></div>
+							
+						</Link>
+											<Link href="#" class="menu_titles">
+							<h2 class="menu_title has_transition_800">Seascape Cocktail Bar</h2>
+							<h3 class="menu_subtitle has_transition_800">drinks&nbsp;and majestic views</h3>
+														<div class="underline has_transition_600_inout"></div>
+							
+						</Link>
+											<Link href="#" class="menu_titles">
+							<h2 class="menu_title has_transition_800">Seascape Restaurant</h2>
+							<h3 class="menu_subtitle has_transition_800">casual all-day dining</h3>
+														<div class="underline has_transition_600_inout"></div>
+							
+						</Link>
+											<Link href="#" class="menu_titles">
+							<h2 class="menu_title has_transition_800">Breakfast</h2>
+							<h3 class="menu_subtitle has_transition_800">better mornings</h3>
+														<div class="underline has_transition_600_inout"></div>
+							
+						</Link>
+											<Link href="#" class="menu_titles">
+							<h2 class="menu_title has_transition_800">Rooftop Terrace</h2>
+							<h3 class="menu_subtitle has_transition_800">private dining &amp; intimate celebrations</h3>
+														<div class="underline has_transition_600_inout"></div>
+							
+						</Link>
+											</div>
+					</div>
+					<div class="lower">
+						<div class="pic">
+							<img src="style/images/mobile/text_shadow.png"/>
+							<img class="full_width" src="style/images/mobile/dining.jpg"/>
+						</div>
+						<p class="next_chapter menu_small_button smaller">Specials <img src="style/images/right_arrow.png"/></p>
+					</div>
+				</div>
+				<div class="section_panel _4" >
+					<div class="section_track has_transition_1000">
+					<div class="chapter">
+							<p class="par_number has_transition_800">4.</p>
+							<h2 class="menu_title has_transition_800">Specials</h2>
+							<Link class="no_link phone_ico" href="tel:0898131333"><img src="style/images/mobile/phone_ico.png"/></Link>
+							
+					</div>
+					<div class="tracking">
+						<div class="track"></div>
+						<div class="filler has_transition_800"></div>
+					</div>
+					
+				</div>
+				<div id="experience_mob_scrollbar" class="menu_panel_scrollbar">
+							<div class="pointer has_transition_1000"></div>
+					</div>
+					<div class="paragraphs">
+					<div class="paragraph_container has_transition_1000">
+					<Link href="#" class="menu_titles">
+								<h2 class="menu_title has_transition_800">EXPERIENCES</h2>
+								<h3 class="menu_subtitle has_transition_800">Extraordinary Experiences.</h3>
+								<div class="underline has_transition_600_inout"></div>
+								
+							</Link>
+											<Link href="#" class="menu_titles">
+							<h2 class="menu_title has_transition_800">Chef On Board</h2>
+							<h3 class="menu_subtitle has_transition_800">Amalfi flavors, at sea level</h3>
+														<div class="underline has_transition_600_inout"></div>
+							
+						</Link>
+											<Link href="#" class="menu_titles">
+							<h2 class="menu_title has_transition_800">Romance Retreat</h2>
+							<h3 class="menu_subtitle has_transition_800">a starry-eyed weekend stay</h3>
+														<div class="underline has_transition_600_inout"></div>
+							
+						</Link>
+											<Link href="#" class="menu_titles">
+							<h2 class="menu_title has_transition_800">Fine Driving on the Amalfi Coast winding roads</h2>
+							<h3 class="menu_subtitle has_transition_800">a dose of retro magic</h3>
+														<div class="underline has_transition_600_inout"></div>
+							
+						</Link>
+											<Link href="#" class="menu_titles">
+							<h2 class="menu_title has_transition_800">Body &amp; Soul</h2>
+							<h3 class="menu_subtitle has_transition_800">getting back to the best you</h3>
+														<div class="underline has_transition_600_inout"></div>
+							
+						</Link>
+										</div>
+					</div>
+					<div class="lower">
+						<div class="pic">
+							<img src="style/images/mobile/text_shadow.png"/>
+							<img class="full_width" src="style/images/mobile/experiences.jpg"/>
+						</div>
+						<p class="next_chapter menu_small_button smaller"><img src="style/images/left_arrow.png"/></p>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	
+		<p class="submit has_transition_1500"><Link href="https://live.ipms247.com/booking/book-rooms-touchwoodbliss" target="_blank"> BOOK NOW </Link></p>
+		<div class="circle_button right ">
+			<Link href="https://live.ipms247.com/booking/book-rooms-touchwoodbliss" target="_blank"><div class="back has_transition_1000 transform_all"></div></Link>
+			<div class="arrow has_transition_800">
+				
+			
+				<Link href="https://wa.me/917030666444" target="_blank"> 
+				<img style={{"width": "100%"}} src="style/images/whatsapp.png"/>
+			</Link> 
+			</div>
+		</div>
+	
+		<div id="menu_side section_pic" class="mobile_hidden hidden has_transition_1500" style={{"right": "0","position": "fixed","z-index": "2","margin-right": "1.777777%","margin-top": "3.1%"}}>
+			<div id="menu_controller_container">
+					<div class="menu_controller">
+						<div class="lines">
+							<hr class="_1 has_transition_600"/>
+							<hr class="_2 has_transition_600"/>
+							<hr class="_3 has_transition_600"/>
+						</div>
+					</div>
+			</div>
+			<div id="menu_center_side" class="has_transition_1500">
+				<div id="menu_logo">
+					<img src="style/images/home/logo_menu.png"/>
+				</div>
+				<div id="menu_scroller">
+					<div class="track"></div>
+					<div class="pointer scroll_transition" style={{"transform": "scale(1, 0.179294)"}}>
+					</div>
+				</div> 
+			</div>
+			<div id="book_side" class="has_transition_1500">
+				<p class="book_now">book now</p>
+			</div>
+
+			<div id="player_side" class="has_transition_1500">
+				<div class="audio_player">
+								<div class="audio_stream">
+									<canvas style={{"display":"none"}} height="48" id="canvas"></canvas>
+								</div>
+								<div class="player_controls">
+									<div class="button">
+										<img src="style/images/play.png"/>
+									</div>
+									<p class="audio_state">play</p>
+								</div>
+							
+							</div>
+			</div>		
+	</div>
+	
+	
+	<div id="main_menu" class="mobile_hidden">
+		<div id="menu_back" class="no_opacity has_transition_1000 transform_all"></div> {/* <!-- rgk- loader --> */}
+		
+		<div class="menu_panel">
+			<div class="menu_panel_container hidden has_transition_1500">
+				<div class="upper">
+					<p class="menu_number has_transition_806 transform_all">1.<span>0</span></p>
+					<div class="menu_hide_content hidden_by_scaling_full has_transition_800">
+						<div class="cross">
+							<div class="line_1 has_transition_800"></div>
+							<div class="line_2 has_transition_800"></div>
+						</div>
+					</div>
+				</div>
+				<div class="center has_transition_1500">
+	
+	
+					<div class="menu_title_open" style={{"pointer-events": "none"}}> {/* <!-- rgk-imp-remove click event --> */}
+						<h1 class="menu_title">STAY &amp; DINING</h1>
+					</div>
+	
+	
+					<div class="menu_panel_content" id="menu_panel_hotel" style={{"touch-action": "none"}}>
+						<div class="menu_panel_content_container scroll_transition" style={{"transform": "translate(0px, 0px) translateZ(0px)"}}>
+	
+	
+	
+							
+							{/* <!-- COURTYARD VILLAS START --> */}
+							<Link class="menu_paragraph" href="rooms/courtyard-villas.html" rel="location">
+								</Link><div class="menu_titles"><Link class="menu_paragraph" href="rooms/courtyard-villas.html" rel="location">
+									</Link><div class=""><Link class="menu_paragraph" href="rooms/courtyard-villas.html" rel="location">
+										</Link><h2 class="menu_title top_hidden has_transition_800"><Link class="menu_paragraph" href="rooms/courtyard-villas.html" rel="location"></Link><Link href="rooms/courtyard-villas.html">COURTYARD VILLAS</Link></h2>
+										<div class="underline has_transition_600_inout"></div>
+										</div>
+								</div>
+							
+							{/* <!-- COURTYARD VILLAS END --> */}
+	
+	
+							
+	
+							 {/* <!-- GLAMPING TENTS START --> */}
+							<Link class="menu_paragraph" href="rooms/glamping_tents.html" rel="facilities" style={{"padding-top": "-10%"}}>
+								</Link><div class="menu_titles"><Link class="menu_paragraph" href="rooms/glamping_tents.html" rel="facilities" style={{"font-weight": "600"}}>
+									</Link><div class=""><Link class="menu_paragraph" href="rooms/glamping_tents.html" rel="facilities" style={{"font-weight": "600"}}>
+										</Link><h2 class="menu_title top_hidden has_transition_800"><Link class="menu_paragraph" href="rooms/glamping_tents.html" rel="facilities" style={{"font-weight": "600"}}></Link><Link href="rooms/glamping_tents.html">GLAMPING TENTS</Link></h2>
+										<div class="underline has_transition_600_inout"></div>
+										
+									</div>
+								</div>
+							
+						
+							<Link class="menu_paragraph" href="rooms/farmsyde-villas.html" rel="lifestyle2">
+	
+								{/* <!-- <p class="par_number  no_opacity has_transition_800">.3</p>  -->  */}
+								</Link><div class="menu_titles"><Link class="menu_paragraph" href="rooms/farmsyde-villas.html" rel="lifestyle2">
+									</Link><div class=""><Link class="menu_paragraph" href="rooms/farmsyde-villas.html" rel="lifestyle2"> {/* <!-- no_overflow --> */}
+										</Link><h2 class="menu_title top_hidden has_transition_800"><Link class="menu_paragraph" href="rooms/farmsyde-villas.html" rel="lifestyle2"></Link><Link href="rooms/farmsyde-villas.html" class="">FARMSYDE VILLAS</Link></h2>
+										<div class="underline has_transition_600_inout"></div>
+					
+									</div>
+									
+								</div>
+							
+	
+	
+							<Link class="menu_paragraph" href="rooms/restaurant.html" rel="travel">
+								{/* <!-- <p class="par_number  no_opacity has_transition_800">.4</p>  -->  */}
+								</Link><div class="menu_titles"><Link class="menu_paragraph" href="rooms/restaurant.html" rel="travel">
+									</Link><div class=""><Link class="menu_paragraph" href="rooms/restaurant.html" rel="travel"> {/* <!-- no_overflow --> */}
+										</Link><h2 class="menu_title top_hidden has_transition_800"><Link class="menu_paragraph" href="rooms/restaurant.html" rel="travel"></Link><Link href="rooms/restaurant.html" class="">RESTAURANT</Link></h2>
+										<div class="underline has_transition_600_inout"></div>
+										
+									</div>
+									
+								</div>
+							
+
+							<Link class="menu_paragraph" href="rootscafe.html" rel="travel">
+								{/* <!-- <p class="par_number  no_opacity has_transition_800">.4</p>  -->  */}
+								</Link><div class="menu_titles"><Link class="menu_paragraph" href="rootscafe.html" rel="travel">
+									</Link><div class=""><Link class="menu_paragraph" href="rootscafe.html" rel="travel"> {/* <!-- no_overflow --> */}
+										</Link><h2 class="menu_title top_hidden has_transition_800"><Link class="menu_paragraph" href="rootscafe.html" rel="travel"></Link><Link href="rootscafe.html" class="">ROOTS CAFE</Link></h2>
+										<div class="underline has_transition_600_inout"></div>
+										
+									</div>
+									
+								</div>
+							
+
+						</div>
+						<img class="text_shadow_lower" src="style/images/mobile/text_shadow.png"/>
+	
+	
+	
+	
+	
+						<div id="rooms_scrollbar" class="menu_panel_scrollbar no_height has_transition_1500_inout iScrollLoneScrollbar">
+							<div class="pointer scroll_transition" style={{"display": "none", "transform": "translate(0px, 0px) translateZ(0px)"}}></div>
+						</div>
+						
+						
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	
+	
+		<div class="menu_panel">
+			<div class="menu_panel_container hidden has_transition_1500">
+				<div class="upper">
+					<p class="menu_number has_transition_800">2.<span>0</span></p>
+					<div class="menu_hide_content hidden_by_scaling_full has_transition_800">
+						<div class="cross">
+							<div class="line_1 has_transition_800"></div>
+							<div class="line_2 has_transition_800"></div>
+						</div>
+					</div>
+				</div>
+				<div class="center has_transition_1500">
+					<div class="menu_title_open" style={{"pointer-events": "none"}} >
+						<h1 class="menu_title" style={{"margin-bottom": "6%"}}>ACTIVITIES &amp; DAY OUTING</h1>
+						
+					</div>
+	
+					<img class="text_shadow_upper scroll_transition no_opacity" src="style/images/home/text_shadow_upper.png"/>
+	
+	
+					<div class="menu_panel_content" id="menu_panel_rooms" style={{"touch-action": "none"}}>			
+						<div class="menu_panel_content_container scroll_transition" style={{"transform": "translate(0px, 0px) translateZ(0px)"}}>
+	
+							<Link href="activities/indoor.html" class="menu_paragraph" rel="rooms">
+								{/* <!-- <p class="par_number no_opacity has_transition_800">.0</p>  -->  */}
+								</Link><div class="menu_titles"><Link href="activities/indoor.html" class="menu_paragraph" rel="rooms">
+									</Link><div class=""><Link href="activities/indoor.html" class="menu_paragraph" rel="rooms"> {/* <!-- no_overflow --> */}
+										</Link><h2 class="menu_title top_hidden has_transition_800"><Link href="activities/indoor.html" class="menu_paragraph" rel="rooms"></Link><Link href="activities/indoor.html">INDOOR</Link></h2>
+										<div class="underline has_transition_600_inout"></div>
+										
+									</div>
+								
+								</div>
+							
+														<Link href="activities/outdoor.html" class="menu_paragraph" rel="junior-suite">
+								</Link><div class="menu_titles"><Link href="activities/outdoor.html" class="menu_paragraph" rel="junior-suite">
+									</Link><div class=""><Link href="activities/outdoor.html" class="menu_paragraph" rel="junior-suite">
+										</Link><h2 class="menu_title top_hidden has_transition_800"><Link href="activities/outdoor.html" class="menu_paragraph" rel="junior-suite"></Link><Link href="activities/outdoor.html">OUTDOOR</Link></h2>
+										<div class="underline has_transition_600_inout"></div>
+									</div>
+									
+								</div>
+							
+													<Link href="activities/nature.html" class="menu_paragraph" rel="grand-de-luxe">
+								</Link><div class="menu_titles"><Link href="activities/nature.html" class="menu_paragraph" rel="grand-de-luxe">
+									</Link><div class=""><Link href="activities/nature.html" class="menu_paragraph" rel="grand-de-luxe">
+										</Link><h2 class="menu_title top_hidden has_transition_800"><Link href="activities/nature.html" class="menu_paragraph" rel="grand-de-luxe"></Link><Link href="activities/nature.html">NATURE</Link></h2>
+										<div class="underline has_transition_600_inout"></div>
+									</div>
+								</div>
+							
+								
+							
+							<Link href="activities/day_outing.html" class="menu_paragraph" rel="deluxe-corner-sea-view">
+								</Link><div class="menu_titles"><Link href="activities/day_outing.html" class="menu_paragraph" rel="deluxe-corner-sea-view">
+									</Link><div class=""><Link href="activities/day_outing.html" class="menu_paragraph" rel="deluxe-corner-sea-view">
+										</Link><h2 class="menu_title top_hidden has_transition_800"><Link href="activities/day_outing.html" class="menu_paragraph" rel="deluxe-corner-sea-view"></Link><Link href="activities/day_outing.html">DAY OUTING</Link></h2>
+										<div class="underline has_transition_600_inout"></div>
+									</div>
+									{/* <!-- <div class="no_overflow">
+										<h3 class="menu_subtitle top_hidden has_transition_800">new accomodation for 2020</h2></h3>
+									</div>  -->  */}
+								</div>
+							
+							<Link href="activities/camping-tents.html" class="menu_paragraph" rel="deluxe-corner-sea-view">
+								{/* <!-- <p class="par_number no_opacity has_transition_800">.3</p>  -->  */}
+								</Link><div class="menu_titles"><Link href="activities/camping-tents.html" class="menu_paragraph" rel="deluxe-corner-sea-view">
+									</Link><div class=""><Link href="activities/camping-tents.html" class="menu_paragraph" rel="deluxe-corner-sea-view">
+										</Link><h2 class="menu_title top_hidden has_transition_800"><Link href="activities/camping-tents.html" class="menu_paragraph" rel="deluxe-corner-sea-view"></Link><Link href="activities/camping-tents.html">MOUNTAIN CAMPING</Link></h2>
+										<div class="underline has_transition_600_inout"></div>
+									</div>
+									{/* <!-- <div class="no_overflow">
+										<h3 class="menu_subtitle top_hidden has_transition_800">new accomodation for 2020</h2></h3>
+									</div>  -->  */}
+								</div>
+								
+											</div>
+	
+					<img class="text_shadow_lower" src="style/images/home/text_shadow_lower.png"/>
+	
+					<div id="rooms_scrollbar" class="menu_panel_scrollbar no_height has_transition_1500_inout">
+						<div class="pointer scroll_transition"></div>
+					</div>
+	
+	
+				</div>
+					
+				</div>
+				
+			</div>
+		</div>
+	
+		<div class="menu_panel">
+			<div class="menu_panel_container hidden has_transition_1500">
+				<div class="upper">
+					<p class="menu_number has_transition_800">3.<span>0</span></p>
+					<div class="menu_hide_content hidden_by_scaling_full has_transition_800">
+						<div class="cross">
+							<div class="line_1 has_transition_800"></div>
+							<div class="line_2 has_transition_800"></div>
+						</div>
+					</div>
+				</div>
+				<div class="center has_transition_1500">
+					<div class="menu_title_open" style={{"pointer-events": "none"}} > {/* <!-- rgk-imp-remove click event --> */}
+						<h1 class="menu_title" style={{"margin-bottom": "6%"}}>EVENTS &amp; EXPERIENCES</h1>
+					</div>
+						
+					<img class="text_shadow_upper scroll_transition no_opacity" src="style/images/home/text_shadow_upper.png"/>
+					
+					<div class="menu_panel_content" id="menu_panel_dining" style={{"touch-action": "none"}}>
+						<div class="menu_panel_content_container scroll_transition"  style={{"transform": "translate(0px, 0px) translateZ(0px)"}}>
+							<Link href="events/events_experience.html" class="menu_paragraph" rel="dining">
+								{/* <!-- <p class="par_number no_opacity has_transition_800">.0</p>  -->  */}
+								</Link><div class="menu_titles"><Link href="events/events_experience.html" class="menu_paragraph" rel="dining">
+									</Link><div class=""><Link href="events/events_experience.html" class="menu_paragraph" rel="dining">
+										</Link><h2 class="menu_title top_hidden has_transition_800"><Link href="events/events_experience.html" class="menu_paragraph" rel="dining">
+											</Link><Link href="events/wedding.html">WEDDINGS</Link>
+										</h2>
+										<div class="underline has_transition_600_inout"></div>
+										
+									</div>
+								</div>
+							
+								<Link href="events/events_experience.html" class="menu_paragraph">
+								</Link><div class="menu_titles"><Link href="events/events_experience.html" class="menu_paragraph">
+									</Link><div class=""><Link href="events/events_experience.html" class="menu_paragraph">
+										</Link><h2 class="menu_title top_hidden has_transition_800"><Link href="events/events_experience.html" class="menu_paragraph">
+											</Link><Link href="events/events_experience.html">SPECIAL OCCASIONS </Link>
+										</h2>
+																		<div class="underline has_transition_600_inout"></div>
+										
+									</div>
+									
+								</div>
+							
+	
+	
+	
+						  </div>
+					<img class="text_shadow_lower" src="style/images/mobile/text_shadow.png"/>
+					<div id="dining_scrollbar" class="menu_panel_scrollbar no_height has_transition_1500_inout iScrollLoneScrollbar"> {/* <!-- id="dining_scrollbar" --> */}
+						<div class="pointer scroll_transition" style={{"display": "none", "transform": "translate(0px, 0px) translateZ(0px)"}}></div>
+					</div>
+	
+					</div>
+					
+				</div>
+				
+			</div>
+		</div>
+	
+		<div class="menu_panel">
+			<div class="menu_panel_container hidden has_transition_1500">
+				<div class="upper">
+					<p class="menu_number has_transition_800">4.<span>0</span></p>
+					<div class="menu_hide_content hidden_by_scaling_full has_transition_800">
+						<div class="cross">
+							<div class="line_1 has_transition_800"></div>
+							<div class="line_2 has_transition_800"></div>
+						</div>
+					</div>
+				</div>
+				<div class="center has_transition_1500">
+					<div class="menu_title_open" style={{"pointer-events": "none"}} > {/* <!-- rgk-imp-remove click event by apply  --> */}
+						<h1 class="menu_title"><Link href="#">MEMBERSHIP</Link></h1>
+					</div>
+				<div class="menu_panel_content" id="menu_panel_experience" style={{"touch-action": "none"}}>
+					<div class="menu_panel_content_container scroll_transition"  style={{"transform": "translate(0px, 0px) translateZ(0px)"}}>
+						
+						
+						 <Link class="" href="#" rel="specials"> {/* <!-- menu_paragraph --> */}
+							<p class="par_number no_opacity has_transition_800">.0</p>
+							<div class="menu_titles">
+								<div class=""> {/* <!-- no_overflow --> */}
+									<h2 class="menu_title top_hidden has_transition_800" style={{"color": "#ACACAE"}}>COMING SOON</h2>
+								</div>
+							</div>
+						</Link>
+												
+					</div>
+					<img class="text_shadow_lower" src="style/images/mobile/text_shadow.png"/>
+					{/* <!-- rgk - scrollbar height zero after click on heading text  --> */}
+					<div id="experience_scrollbar" class="menu_panel_scrollbar no_height has_transition_1500_inout iScrollLoneScrollbar">
+						<div class="pointer scroll_transition" style={{"display": "none", "transform": "translate(0px, 0px) translateZ(0px)"}}></div>
+					</div>
+					
+				</div>	
+			</div>
+				
+			</div>
+		</div>
+		<div class="menu_panel final">
+			<div class="menu_panel_container hidden has_transition_1500">
+
+				<div class="upper">
+
+	
+					<div class="menu_close">
+						<div class="line_1 has_transition_800"></div>
+						<div class="line_2 has_transition_800"></div>
+					</div>
+					
+					
+				</div>
+	
+				<div class="center">
+					<Link href="index.html" class="outside menu_small_button">Home</Link>
+					<Link href="aboutus.html" class="menu_small_button">About</Link> {/* <!-- dex --> */}
+					<Link href="https://live.ipms247.com/booking/book-rooms-touchwoodbliss" target="_blank" id="book_menu_button2" class="menu_small_button">Book Now</Link>
+					<Link href="connect.html" class="menu_small_button ">Connect</Link>
+					{/* <!-- <Link  href="aboutus.html"class="menu_small_button">About</Link>  -->  */}
+				</div>
+
+				<div class="lower">
+					<Link href="faq.html" class="menu_small_button smaller">FAQ</Link> {/* <!-- rgk = id="credits_button" , href="index.html"-->
+					{/* <!-- <Link target="_blank" href="https://www.casangelina.com/privacy_policy_en.htm"class="menu_small_button smaller">Privacy Policy</Link>  -->  */}
+					<Link href="policy.html" class="menu_small_button smaller">Privacy Policy</Link> {/* <!-- href="index.html" --> */}
+
+				</div>
+			</div>
+		</div>
+		
+		
+	</div>	
+	
+	{/* <!-- RGK-MAIN-INDEX-PAGE-START --> */}
+
+	<div id="main">
+		<div id="main_scroller" class="scroll_transition"  style={{"transform": "translate(0px, 0px) translateZ(0px)"}}>	
+
+
+			{/* <!-- RGK-CONTENT-start --> */}
+			<div id="content" data-current="index" data-controller="page">
+
+	
+			{/* <!-- rgk-index-HeaderImage+logo-end -ORG-->
+
+
+			{/* <!-- RGK-PLUGIN-index-(HeaderSlider+logo)-START --> */}
+
+			<div class="row stripe ">
+		
+				 <div id="header"> {/* <!-- rgk-imp id="header" --> */}
+               
+                <section class="slider-section">
+	           <div id="carousel" class="carousel slide" data-ride="carousel">
+		        
+		        <ol class="carousel-indicators">
+			<li data-target="#carousel" data-slide-to="0" class=""></li>
+			<li data-target="#carousel" data-slide-to="1" class=""></li>
+			<li data-target="#carousel" data-slide-to="2" class=""></li>
+			<li data-target="#carousel" data-slide-to="3" class="active"></li>
+			<li data-target="#carousel" data-slide-to="4" class=""></li>
+			<li data-target="#carousel" data-slide-to="5" class=""></li>
+		    </ol> 
+		   <div class="carousel-inner" role="listbox">
+			<div class="carousel-item" style={{"background-image": "url('style/images/home/banner1.jpg')"}}>
+				<div class="carousel-caption d-none d-md-block">
+					{/* <!-- <h3>Amazon Forest</h3>
+					<p>Cool description for Amazon Forest.</p>  -->  */}
+				</div>
+			</div> 
+
+			<div class="carousel-item"  style={{"background-image": "url('style/images/home/banner2.jpg')"}}>
+				<div class="carousel-caption d-none d-md-block">
+					
+				</div>
+			</div> 
+
+			<div class="carousel-item"  style={{"background-image": "url('style/images/home/banner3.jpg')"}}>
+				<div class="carousel-caption d-none d-md-block">
+					
+				</div>
+			</div> 
+
+
+			<div class="carousel-item active"  style={{"background-image": "url('style/images/home/banner4.jpg')"}}>
+				<div class="carousel-caption d-none d-md-block">
+					
+				</div>
+			</div>
+			<div class="carousel-item"  style={{"background-image": "url('style/images/home/banner5.jpg')"}}>
+				<div class="carousel-caption d-none d-md-block">
+					
+				</div>
+			</div>
+			<div class="carousel-item"  style={{"background-image": "url('style/images/home/banner6.jpg')"}}>
+				<div class="carousel-caption d-none d-md-block">
+					
+				</div>
+			</div>
+		</div> 
+
+		
+	    </div> 
+       </section>
+       <section>
+
+    </section>
+
+	  <script src="jquery.min-slider.js"></script>
+	  <script src="popper.min-slider.js"></script>
+	 <script src="bootstrap.min-slider.js"></script>
+
+				 <div id="header_content">
+					
+	
+			
+			<div id="page">
+
+
+
+
+	
+	<div class="row content">
+		<div class=""> {/* <!-- paragraph first --> */}
+		
+
+
+	<div id="section_content">
+		<div class="has_form with_pic"> {/* <!-- row has_form with_pic content --> */}
+
+			<div class="block_25 flexed" style={{"background-color": "#eaeaec"}}>
+			   </div> 
+			<div class="page_form" rel="map"style={{"background-color": "#eaeaec"}}>	
+				<form id="submit-form">
+				<table>
+					<tbody>
+					
+					 <tr>
+						<td><div class="form_input has_transition_800"><input class="required clearFields" placeholder="Name" name="name" type="text" id="name" required=""/></div></td>
+						<td><div class="form_input has_transition_800"><input class="required clearFields" placeholder="Mobile" name="mobile" type="text" id="mobile" required=""/></div></td>
+						<td><div class="form_input has_transition_800"><input class="required clearFields" placeholder="Email" name="email" type="text" id="email" required=""/></div></td>
+						<td><div class="form_input has_transition_800"><input class="required clearFields" placeholder="City" name="city" type="text" id="city" required=""/></div></td>
+
+						<td><button class="custom-btn btn-4" onclick="submitform()"><span>Request A Call</span></button></td>
+						{/* <!-- <td><input type="button" onclick="submit()" class="custom-btn btn-4" value="Request A Call"> </td>  -->  */}
+					  </tr>
+					 </tbody>
+				  </table>
+				</form>
+
+				
+				  
+			</div>
+			 <div class="block_25 flexed"style={{"background-color": "#eaeaec"}}>
+				 
+				</div> 
+		</div>
+	</div>
+
+</div></div>
+{/* <!-- rgk- enquire now - END --> */}
+
+	
+	
+	
+				<div class="row content">
+					<div class="paragraph first">
+						<div class="no_overflow">
+							{/* <!-- rgk-ORG-with transition <h1 class="big_title top_hidden has_transition_800">ABOUT TOUCHWOOD BLISS</h1>  -->  */}
+							<h1 class="big_title has_transition_600">ABOUT TOUCHWOOD BLISS</h1>
+						</div>
+						<hr/>
+						<div class="no_overflow big_subtitle">
+							{/* <!-- <h2 class="big_subtitle top_hidden has_transition_800">We are not only the Best Resort, but definitely the most Blessed Resort!</h2>  -->  */}
+							<div class="no_overflow">
+								<p class="desc_text has_transition_1500">
+									Our guests say we are not only the best resort, but also a blessed resort!
+								</p>
+							</div>
+						</div>
+						{/* <!-- rgk-ORG-with transition	<p class="body_text two_col top_translated has_transition_2000">  -->  */}
+							<p class="two_col" style={{"font-size": "15px","line-height": "24px"}}> {/* <!-- rgk-class="body_text two_col" --> */} 
+							 {/* <!-- <strong>We are not only the Best Resort, but definitely the most Blessed Resort!</strong><br/>  -->  */}
+							 Happiness is a language it is conveyed and communicated throughout your stay.
+			   Touchwood Bliss embodies the basics of hospitality, what has been for a century’s principles of an ideal retreat. We invite you cordially <b>to relax, refresh your soul, and rejuvenate your heart</b>.
+			   Located among the serene hills of Igatpuri, Touchwood Bliss is a thoughtfully integrated atmosphere that captivates you and nurtures in its vibrations. At your service, we have glamping tents, courtyard villas, surrounded by a fully equipped and developed recreational arena, and accompanied multi-cuisine pure veg restaurant. 
+			   <b>We are offering you an experience of eternal bliss. Welcome!</b>
+	
+						
+						</p>
+						
+	
+					
+	
+							<div style={{"margin-top": "2%"}} id=""> {/* <!-- max-width: 175px; --> */}
+									<Link href="aboutus.html">
+										<div class=""> {/* <!-- frame --> */}
+											<button class="custom-btn btn-3" style={{"margin": "0px"}}><span>&nbsp;&nbsp;&nbsp; Know Our Philosophy &nbsp;&nbsp;&nbsp;</span></button>
+											</div>
+										</Link>
+									  {/* <!-- btn3 end --> */}
+								</div>
+	
+	
+						<div class="awards">
+	
+	
+	
+							<div class="hover award traveler"><Link href="https://www.booking.com/" target="_blank"><img class="full_width" src="style/images/home/awards/logo1_booking.com.png"/></Link></div>
+							<div class="hover award traveler"><Link href="https://www.tripadvisor.in/Hotel_Review-g1156428-d15096038-Reviews-Touchwood_Bliss-Igatpuri_Nashik_District_Maharashtra.html" target="_blank"><img class="full_width" src="style/images/home/awards/logo2_tripadvisor.png"/></Link></div>
+							<div class="hover award traveler"><Link href="https://www.makemytrip.com/hotels/touchwood_bliss_igatpuri-details-igatpuri.html" target="_blank"><img class="full_width" src="style/images/home/awards/logo3_makemytrip.png"/></Link></div>
+							<div class="hover award traveler"><Link href="https://www.google.com/travel/hotels/entity/CgoI-8yY1vHo8o1PEAE/overview?g2lb=2502548%2C4258168%2C4270442%2C4306835%2C4317915%2C4371335%2C4401769%2C4419364%2C4429192%2C4482438%2C4486153%2C4509341%2C4515404%2C4536454%2C4545890%2C4554491%2C4564872%2C4570417%2C4571214%2C4270859%2C4284970%2C4291517&amp;hl=en-IN&amp;gl=in&amp;ssta=1&amp;rp=EPvMmNbx6PKNTxD7zJjW8ejyjU84AkAASAHAAQI&amp;ictx=1&amp;utm_campaign=sharing&amp;utm_medium=link&amp;utm_source=htls&amp;ts=CAESCgoCCAMKAggDEAAaSQorEicyJTB4M2JkZDg0NzUxMTE5NjA0NzoweDRmMWJjYjQ3MWFjNjI2N2IaABIaEhQKBwjlDxAGGAoSBwjlDxAGGAsYATICEAAqCQoFOgNJTlIaAA" target="_blank"><img class="full_width" src="style/images/home/awards/logo4_googlerating.png"/></Link></div>
+
+							<div class="hover award traveler"><Link href="https://www.wedmegood.com/wedding-venues/Touchwood-Bliss-843881" target="_blank"><img class="full_width" src="style/images/home/awards/logo5_wedmegood.png"/></Link></div>
+							<div class="hover award traveler"><Link href="https://www.weddingwire.in/banquet-halls/touchwood-bliss--e320345" target="_blank"><img class="full_width" src="style/images/home/awards/logo6_weddingwire.png"/></Link></div>
+							
+	
+							</div>
+					</div>
+				</div>
+
+
+
+				{/* <!-- rgk RGK-CAROSEL SLIDER SECTION START  --> */}
+				<div class="row stripe "> 
+					<Link class="no_overflow has_transition_2000" style={{"display": "block"}}>   {/* <!-- full_pic  --> */}
+						<div> {/* <!-- rgk-REMOVED = class="row no_overflow" --> */}
+							<div id="understated_pic">
+								
+                                 <div class="scrolly"> {/* <!-- RASHMI-SLIDER-MOBILE VIEW note : remove : mobile_hidden --> */}
+                                  {/* <!-- <h2 class="topT">Top Tracks</h2>  -->  */}
+                                 <button id="left"><span class="material-icons">chevron_left</span></button>
+                                 <button id="right"><span class="material-icons">chevron_right</span></button>
+                              
+								 <ul class="carouselPre">
+								
+                              <li class="itemsC">
+                             
+                       <div class="bgImg">
+						{/* <!-- <img src="https://lastfm.freetls.fastly.net/i/u/ar0/e79f7269fcfb07e2beb25f573eb75125.jpg" alt="image"  srcset=""/>  -->  */}
+						 <Link href="rooms/glamping_tents.html"><img id="blissimg1" src="style/images/home/carolus-slider/cs1_475x770.jpg" alt="image"  srcset=""/></Link>
+					</div>
+                     </li>
+					
+                  <li class="itemsC">
+                 
+                  <div class="bgImg"><Link href="rooms/courtyard-villas.html"><img id="blissimg2" src="style/images/home/carolus-slider/cs2_475x770.jpg" alt="image"  srcset=""/></Link></div>
+                   </li>
+                  <li class="itemsC">
+            <div class="bgImg"><Link href="rooms/farmsyde-villas.html"><img id="blissimg3" src="style/images/home/carolus-slider/cs3_475x770.jpg" alt="image"  srcset=""/></Link></div>
+                 </li>
+                 <li class="itemsC">
+                  
+            <div class="bgImg">
+				<Link href="rooms/restaurant.html"><img id="blissimg4" src="style/images/home/carolus-slider/cs4_475x770.jpg" alt="image"  srcset=""/></Link></div>
+               </li>
+                         <li class="itemsC">
+                         
+                         <div class="bgImg">
+							<Link href="rootscafe.html"><img id="blissimg5" src="style/images/home/carolus-slider/cs5_475x770.jpg" alt="image"  srcset=""/></Link></div>
+                               </li>
+
+							   <li class="itemsC">
+								
+						 <div class="bgImg">
+							<Link href="events/events_experience.html"><img id="blissimg6" src="style/images/home/carolus-slider/cs6_475x770.jpg" alt="image"  srcset=""/></Link></div>
+							</li>
+
+                                </ul>
+                                </div>
+                                    <script src="script_carousel_slider.js"></script>
+								
+							</div>
+						</div>
+						</Link><div class="main_block_title relative"><Link class="no_overflow top_translated has_transition_2000"style={{"display": "block"}}> 
+							</Link><div class="block_title"><Link class="no_overflow top_translated has_transition_2000"style={{"display": "block"}}>
+								
+								</Link><div class="no_overflow"><Link class="no_overflow top_translated has_transition_2000"style={{"display": "block"}}>
+								</Link><p class="desc_title top_hidden has_transition_1500" style={{"letter-spacing": "6px"}}><Link class="no_overflow top_translated has_transition_2000"style={{"display": "block"}}>
+									</Link><Link>RELAX. REFRESH. REJUVENATE</Link>
+								</p> {/* <!-- desktop  --> */}
+							</div>
+							</div>	
+						</div>
+					
+					
+				</div>
+				{/* <!-- rgk RGK-CAROSEL SLIDER SECTION END --> */}
+	
+	
+				<div class="row no_overflow">  {/* <!-- mobile_hidden --> */}
+					<div id="understated_pic">
+						<img class="full_width" data-src="style/images/home/text_image_full.jpg" src="style/images/home/text_image_full.jpg"/>
+	
+	
+				<div class="row">
+					<div class="main_block_title relative">
+						<div class="block_title"><div class="no_overflow"><p class="desc_text top_hidden has_transition_1500" style={{"text-indent": "3px"}}>It’s time to</p></div><div class="no_overflow">
+							<p class="desc_title top_hidden has_transition_1500" style={{"letter-spacing": "6px"}}>BREAK FREE. BREATHE FREE.</p></div></div>	
+					</div>
+				</div>
+	
+	
+	
+	
+	
+				<div class="row stripe">
+					<Link href="events/wedding.html" class="half_pic top_translated no_overflow has_transition_2000 "> {/* <!-- cta = rgk-removed gray flap  --> */}
+						<img class="full_width has_transition_1500" data-src="style/images/home/q1.jpg" src="style/images/home/q1.jpg"/>
+						<div class="description_box relative">
+							<div class="transform_all back has_transition_1000"></div>
+							
+							<h3 class="desc_title relative">Weddings and Celebrations</h3>
+							<hr class="relative"/>
+							<p class="desc_text relative ">Nature Inspired Celebrations</p>
+						</div>
+					</Link>
+					<Link href="events/events_experience.html" class="half_pic top_translated no_overflow has_transition_2000"> {/* <!-- cta  --> */}
+						<img class="full_width has_transition_1500" data-src="style/images/home/q2.jpg" src="style/images/home/q2.jpg"/>
+						<div class="description_box relative"> {/* <!-- grey --> */}
+													<div class="transform_all back has_transition_1000"></div>
+							
+							<h3 class="desc_title relative">Corporate Events</h3>
+							<hr class="relative"/>
+							<p class="desc_text relative">Nature Inspired Corporate Affairs</p>
+						</div>
+					</Link>
+				</div>
+	
+	{/* <!-- rgk-remove white space style="height:807px; !important" --> */}
+				<div class="row stripe">  {/* <!-- style="height:807px !important;" , style="height:785px !important;" --> */}
+	
+	
+					<Link href="events/events_experience.html" class="half_pic no_overflow top_translated has_transition_2000"> {/* <!-- cta --> */}
+						<img class="full_width has_transition_1500" data-src="style/images/home/q3.jpg" src="style/images/home/q3.jpg"/>
+						<div class="description_box relative">
+													<div class="transform_all back has_transition_1000"></div>
+							
+							<h3 class="desc_title relative">Social Events</h3> {/* <!-- HAPPENINGS , Events And Celebrations  --> */}
+							<hr class="relative"/>
+							<p class="desc_text relative">Nature Inspired Celebrations</p>
+						</div>
+					</Link>
+	
+	
+					<div class=" half_pic top_translated has_transition_2000">{/* <!--  cta --> */}
+						<div class="video_panel self self_hidden has_transition_1600_expo"> {/* <!-- rgk note- video is called from indexb72f.js file-- DESKTOP VIEW VIDEO video_panel --> */}
+							
+	
+	
+				{/* <!-- rgk Desktop View ONLY  --> */}
+				<div class="row stripe mobile_hidden">
+					<Link href="#" class=" full_pic top_translated no_overflow has_transition_2000"> {/* <!-- cta --> */}
+						<img class="full_width has_transition_1500" data-src="style/images/home/grid.jpg" src="style/images/home/grid.jpg"/>
+	
+	
+	
+	
+						<div class="description_box relative">
+							<div class="transform_all back has_transition_1000"></div>
+							
+							<h3 class="desc_title relative">Celebrities at Bliss</h3>
+							<hr class="relative"/>
+							<p class="desc_text relative">Influencers Who Are Inspired By Nature</p>
+						</div>
+					</Link>
+				</div>
+
+
+
+	
+					{/* <!-- rgk Mobile View ONLY  --> */}
+					<div class="row stripe row no_overflow mobile_only">
+						<Link href="#">
+	
+	
+						<div id="understated_pic">
+							{/* <!-- <img class="full_width" data-src="style/images/home/text_image_full.jpg" />  -->  */}
+							<img class="full_width has_transition_1500" data-src="style/images/home/grid.jpg" id="flowers" src="style/images/home/grid.jpg"/>
+							
+						</div>
+						<div class="main_block_title relative"> 
+							<div class="description_box relative">
+								<div class="transform_all back has_transition_1000"></div>
+								
+								<h3 class="desc_title relative">Celebrities at Bliss</h3>
+								<hr class="relative"/>
+								<p class="desc_text relative">Influencers Who Are Inspired By Nature</p>
+							</div>	
+						</div></Link>
+					</div>
+	
+				{/* <!-- rgk 20+ Activities  --> */}
+				<div class="row stripe">
+					<div id="experience_box" class="top_translated has_transition_2000" style={{"height": "360px"}}>     {/* <!-- style="padding-bottom: 130px !important;" style="height: 410px !important;" --> */}
+						<div class="left pic">
+								<div id="experience_box_scroller" class="has_transition_2000" style={{"width": "4480px"}}>
+								<div class="exp_box_pic"><img class="full_width has_transition_800" data-src="style/images/home/outdoor2.jpg" src="style/images/home/outdoor2.jpg"/></div>
+								<div class="exp_box_pic"><img class="full_width has_transition_800" data-src="style/images/home/outdoor1.jpg" src="style/images/home/outdoor1.jpg"/></div>
+	
+								<div class="exp_box_pic"><img class="full_width has_transition_800" data-src="style/images/home/nature1.jpg" src="style/images/home/nature1.jpg"/></div>
+								<div class="exp_box_pic"><img class="full_width has_transition_800" data-src="style/images/home/nature2.jpg" src="style/images/home/nature2.jpg"/></div>
+	
+	
+								<div class="exp_box_pic"><img class="full_width has_transition_800" data-src="style/images/home/indoor1.jpg" src="style/images/home/indoor1.jpg"/></div> {/* <!-- style="width: 53vw;margin-left: -53px;" --> */}
+	
+								<div class="exp_box_pic"><img class="full_width has_transition_800" data-src="style/images/home/indoor2.jpg" src="style/images/home/indoor2.jpg"/></div> {/* <!-- style="width: 53vw;margin-left: -56px;" --> */}
+	
+								<div class="exp_box_pic"><img class="full_width has_transition_800" data-src="style/images/home/nature1.jpg" src="style/images/home/nature1.jpg"/></div>
+								</div>
+						</div>
+						<div class="right body" style={{"height": "360px"}}>
+							<div class=""> {/* <!-- no_overflow --> */}
+								<div class="box_title top_hidden has_transition_1500"><h2 class="desc_title relative">PLAY. LEARN. BOND</h2></div> {/* <!-- MEMORABLE EXPERIENCES --> */}
+							</div>
+	
+	
+							<div class="data_container">
+	
+									<div class="exp_data has_transition_1500_inout _1 active">
+									<div class="section_panel_title no_overflow"><h1 class="desc_title top_hidden has_transition_1000" style={{"text-transform": "capitalize"}}>10+ Outdoor Activities</h1></div>
+									<div class="section_separator">
+										<div class="pointer no_width has_transition_800_inout"></div>
+									</div>
+									<div class="section_subtitle no_overflow"><h2 class="desc_text bottom_hidden has_transition_1000" style={{"text-transform": "none"}}>Bond with your loved ones</h2></div>
+									{/* <!--  <div class="section_text"><p class="body_text"><ul>
+									<li><span class="dash">-</span> <span class="special_snip">Private Boat Ride from 18:30 to 21:00</span></li>
+									<li><span class="dash">-</span> <span class="special_snip">Dinner for Two onboard (excluding beverages)</span></li></ul></p></div>  -->  */}
+									<Link class="more" href="#"> {/* <!-- class="more" --> */}
+										<div class="line no_height has_transition_1000"></div>
+										{/* <!-- new button --> */}
+										</Link><div id="weather" style={{"padding": "12px 0"}}><Link class="more" href="#">
+									{/* <!-- btn3 start --> */}
+									 </Link><Link href="activities/outdoor.html">
+									<div class=""> {/* <!-- frame --> */}
+										<button class="custom-btn btn-3" style={{"margin": "0px"}}><span>&nbsp;&nbsp;&nbsp; Explore &nbsp;&nbsp;&nbsp;</span></button>
+										</div>
+									</Link>
+								  {/* <!-- btn3 end --> */}
+										</div>
+										{/* <!-- new button --> */}
+										{/* <!-- <p class="top_single has_transition_1000">Explore</p>  -->  */}
+									
+								</div>
+								
+								
+	
+									<div class="exp_data has_transition_1500_inout _2">
+									<div class="section_panel_title no_overflow"><h1 class="desc_title top_hidden has_transition_1000">10+ Outdoor Activities</h1></div>
+									<div class="section_separator">
+										<div class="pointer no_width has_transition_800_inout"></div>
+									</div>
+									<div class="section_subtitle no_overflow"><h2 class="desc_text bottom_hidden has_transition_1000">Bond with your loved ones</h2></div>
+						
+									<Link class="more" href="#">
+										<div class="line no_height has_transition_1000"></div>
+										{/* <!-- new button --> */}
+										</Link><div id="weather" style={{"padding": "12px 0"}}><Link class="more" href="#">
+											{/* <!-- <Link href="specials/romance-retreat.html"><div class="day_name" style="padding: 15px 15px 15px 15px;width: 20.286%;">
+											<div class="day_back has_transition_1000"></div>
+											<p class="" style="text-align: center;position: inherit;left: 0px;bottom: 0px;font-weight: 400;text-transform: none;font-size: 16px;">Explore</p>
+											</div>
+										</Link>  -->  */}
+										</Link><Link href="activities/outdoor.html">
+											<div class=""> {/* <!-- frame --> */}
+												<button class="custom-btn btn-3" style={{"margin": "0px"}}><span>&nbsp;&nbsp;&nbsp; Explore &nbsp;&nbsp;&nbsp;</span></button>
+												</div>
+											</Link>
+										</div>
+											{/* <!-- new button --> */}
+									
+								</div>
+	
+	
+								<div class="exp_data has_transition_1500_inout _2">
+									<div class="section_panel_title no_overflow"><h1 class="desc_title top_hidden has_transition_1000">10+ Nature Activities</h1></div>
+									<div class="section_separator">
+										<div class="pointer no_width has_transition_800_inout"></div>
+									</div>
+									<div class="section_subtitle no_overflow"><h2 class="desc_text bottom_hidden has_transition_1000">Bond with Nature</h2></div>
+						
+									<Link class="more" href="#">
+										<div class="line no_height has_transition_1000"></div>
+										{/* <!-- new button --> */}
+										</Link><div id="weather" style={{"padding": "12px 0"}}><Link class="more" href="#">
+											{/* <!-- <Link href="specials/romance-retreat.html"><div class="day_name" style="padding: 15px 15px 15px 15px;width: 20.286%;">
+											<div class="day_back has_transition_1000"></div>
+											<p class="" style="text-align: center;position: inherit;left: 0px;bottom: 0px;font-weight: 400;text-transform: none;font-size: 16px;">Explore</p>
+											</div></Link>  -->  */}
+											</Link><Link href="activities/nature.html">
+												<div class=""> {/* <!-- frame --> */}
+													<button class="custom-btn btn-3" style={{"margin": "0px"}}><span>&nbsp;&nbsp;&nbsp; Explore &nbsp;&nbsp;&nbsp;</span></button>
+													</div>
+												</Link>
+											</div>
+											{/* <!-- new button --> */}
+									
+								</div>
+	
+	
+								<div class="exp_data has_transition_1500_inout _2">
+									<div class="section_panel_title no_overflow"><h1 class="desc_title top_hidden has_transition_1000">10+ Nature Activities</h1></div>
+									<div class="section_separator">
+										<div class="pointer no_width has_transition_800_inout"></div>
+									</div>
+									<div class="section_subtitle no_overflow"><h2 class="desc_text bottom_hidden has_transition_1000">Bond with Nature</h2></div>
+						
+									<Link class="more" href="#">
+										<div class="line no_height has_transition_1000"></div>
+										{/* <!-- new button --> */}
+										</Link><div id="weather" style={{"padding": "12px 0"}}><Link class="more" href="#">
+											{/* <!-- <Link href="specials/romance-retreat.html"><div class="day_name" style="padding: 15px 15px 15px 15px;width: 20.286%;">
+											<div class="day_back has_transition_1000"></div>
+											<p class="" style="text-align: center;position: inherit;left: 0px;bottom: 0px;font-weight: 400;text-transform: none;font-size: 16px;">Explore</p>
+											</div>
+										</Link>  -->  */}
+										</Link><Link href="activities/nature.html">
+											<div class=""> 
+												<button class="custom-btn btn-3" style={{"margin": "0px"}}><span>&nbsp;&nbsp;&nbsp; Explore &nbsp;&nbsp;&nbsp;</span></button>
+												</div>
+											</Link>
+											</div>
+											{/* <!-- new button --> */}
+									
+								</div>
+	
+	
+	
+								
+	
+	
+									
+								<div class="exp_data has_transition_1500_inout _3">
+									<div class="section_panel_title no_overflow"><h1 class="desc_title top_hidden has_transition_1000" style={{"color": "#595b5b"}}>15+ Indoor Activities</h1></div>
+									<div class="section_separator">
+										<div class="pointer no_width has_transition_800_inout"></div>
+									</div>
+									<div class="section_subtitle no_overflow"><h2 class="desc_text bottom_hidden has_transition_1000" style={{"color": "#595b5b"}}>Bond with your loved ones</h2></div>
+						
+									<Link class="more" href="#">
+										<div class="line no_height has_transition_1000"></div>
+										{/* <!-- new button --> */}
+										</Link><div id="weather" style={{"padding": "12px 0"}}><Link class="more" href="#">
+											{/* <!-- <Link href="specials/dolce-vita.html"><div class="day_name" style="padding: 15px 15px 15px 15px;width: 20.286%;">
+											<div class="day_back has_transition_1000"></div>
+											<p class="" style="text-align: center;position: inherit;left: 0px;bottom: 0px;font-weight: 400;text-transform: none;font-size: 16px;">Explore</p>
+											</div></Link>  -->  */}
+											</Link><Link href="activities/indoor.html">
+												<div class=""> 
+													<button class="custom-btn btn-3" style={{"margin": "0px"}}><span>&nbsp;&nbsp;&nbsp; Explore &nbsp;&nbsp;&nbsp;</span></button>
+													</div>
+												</Link>
+											</div>
+											{/* <!-- new button --> */}
+									
+								</div>
+								<div class="exp_data has_transition_1500_inout _3">
+									<div class="section_panel_title no_overflow"><h1 class="desc_title top_hidden has_transition_1000" style={{"color": "#595b5b"}}>15+ Indoor Activities</h1></div>
+									<div class="section_separator">
+										<div class="pointer no_width has_transition_800_inout"></div>
+									</div>
+									<div class="section_subtitle no_overflow"><h2 class="desc_text bottom_hidden has_transition_1000" style={{"color": "#595b5b"}}>Bond with your loved ones</h2></div>
+						
+									<Link class="more" href="#">
+										<div class="line no_height has_transition_1000"></div>
+										{/* <!-- new button --> */}
+										</Link><div id="weather" style={{"padding": "12px 0"}}><Link class="more" href="#">
+											{/* <!-- <Link href="specials/dolce-vita.html"><div class="day_name" style="padding: 15px 15px 15px 15px;width: 20.286%;">
+											<div class="day_back has_transition_1000"></div>
+											<p class="" style="text-align: center;position: inherit;left: 0px;bottom: 0px;font-weight: 400;text-transform: none;font-size: 16px;">Explore</p>
+											</div></Link>  -->  */}
+											</Link><Link href="activities/indoor.html">
+												<div class=""> 
+													<button class="custom-btn btn-3" style={{"margin": "0px"}}><span>&nbsp;&nbsp;&nbsp; Explore &nbsp;&nbsp;&nbsp;</span></button>
+													</div>
+												</Link>
+											</div>
+											{/* <!-- new button --> */}
+									
+								</div>
+								
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+								
+								
+	
+							</div>
+	
+	
+	
+							<div id="experience_controller"> {/* <!-- RASHMI --> */}
+								<div class="controller_left">
+									<div class="circle_button left ">
+										<div class="back  hidden_by_scaling_full has_transition_1000"></div>
+										<div class="arrow hidden has_transition_800"><img data-src="style/images/home/tiny_arrow.png" src="style/images/home/tiny_arrow.png"/></div>
+									</div>
+									<div class="no_overflow">
+										<p class="controller_text top_hidden has_transition_1000"></p>
+									</div>
+								</div>
+								<div class="controller_right">
+									<div class="circle_button right ">
+										<div class="back hidden_by_scaling_full has_transition_1000 transform_all"></div>
+										<div class="arrow hidden has_transition_800"><img data-src="style/images/home/tiny_arrow.png" src="style/images/home/tiny_arrow.png"/></div>
+									</div>
+									<div class="no_overflow">
+										<p class="controller_text top_hidden has_transition_1500">15+ Indoor Activities</p>
+									</div>								
+								</div>
+							</div>
+	
+	
+						</div>
+					</div>
+				</div>
+				{/* <!-- /rgk 20+ Activities --> */}
+
+
+
+
+
+
+	
+				<div class="row content">
+					<div id="weather" style={{"padding-top": "6vw","padding-bottom": "0vw"}}> {/* <!-- paragraph first , padding-top: 6vw;-->
+						{/* <!-- <div class="no_overflow">
+							<h1 class="big_title top_hidden has_transition_800">ABOUT TOUCHWOOD BLISS</h1>
+						</div>  -->  */}
+	
+	
+						{/* <!-- <div id="weather" style="padding: 20px 0;">  -->  */}
+							<div class="no_overflow">
+							<h3 class="section_title has_transition_1500"> GOOD READS </h3>
+							</div>
+						{/* <!-- </div>  -->  */}
+	
+	
+	
+						<div class="journal_container" style={{"margin-top": "5px"}}>
+					
+						<div class="awards" style={{"max-width": "100%","margin-top": "1vw"}}> {/* <!-- style="max-width: 820px;margin-top: 1vw;" --> */}
+	
+							<div class="hover award traveler" style={{"max-width": "400px","width": "60%"}}>
+								
+								<div class="pic_box covered" style={{"width": "320px", "height": "400px","overflow": "visible"}}>
+	
+									<div class="journal_title has_transition_1000">
+										<p><span class="j_title">Nature inspired wellness</span>
+										</p>
+									</div>
+	
+									<div class="" style={{"background": "transparent !important"}}></div> {/* <!-- cover grey  has_transition_1000_inout  --> */}
+									<Link href="blogs/blogs.html"><img class="content  has_transition_1000_inout" src="style/images/home/journal1_320x320.jpg"/></Link>
+									
+								</div>
+	
+							</div>
+							<div class="hover award traveler" style={{"max-width": "400px","width": "60%"}}>
+								<div class="pic_box covered" >
+									<div class="journal_title has_transition_1000">
+										<p><span class="j_title">Happy Women, Happy World</span></p>
+									</div>
+									<div class="" style={{"background": "transparent !important"}}></div> {/* <!-- cover grey  has_transition_1000_inout --> */}
+									<Link href="blogs/blogs.html"><img class="content  has_transition_1000_inout" src="style/images/home/journal2_320x320.jpg"/></Link>
+									</div>
+									
+							</div>
+							<div class="hover award traveler" style={{"max-width": "400px","width": "50%"}}>
+								<div class="pic_box covered" style={{"width": "320px", "height": "400px", "overflow": "visible"}}>
+									<div class="journal_title has_transition_1000">
+										<p><span class="j_title">Holiday In Nature</span></p>
+									</div>
+									<div class="" style={{"background": "transparent !important"}}></div> {/* <!-- cover grey  has_transition_1000_inout --> */}
+									<Link href="blogs/blogs.html"><img class="content  has_transition_1000_inout" src="style/images/home/journal3_320x320.jpg"/></Link>
+									</div>
+							</div>
+	
+						</div>
+						</div>
+	
+	
+	
+	
+					</div>
+				</div>
+	
+	
+	
+	
+				{/* <!-- rgk org journal post must not delete --> */}
+				<div class="row" style={{"display": "none"}}> 
+					<div id="latest_journal" class="mobile_hidden" style={{"background": "white", "padding-top": "6vw","padding-bottom": "0vw"}}> 
+						<div class="no_overflow">
+						<h3 class="section_title has_transition_1500">GOOD READS 2</h3>
+						</div>
+						<div class="journal_container">
+
+							<div class="hover award traveler" style={{"max-width": "400px","width": "60%"}}>
+
+
+							<Link target="_blank" href="blogs/blogs.html" class="journal_record">
+								<div class="pic_box covered">
+								<div class="cover grey hidden has_transition_1000_inout"></div>
+								<img class="content hidden has_transition_1000_inout" src="style/images/home/journal1_320x320.jpg"/>
+								</div>
+								<div class="journal_title top_double has_transition_1000">
+									<p><span class="j_title">Nature inspired wellness</span><span class="j_time"></span></p>
+								</div>
+							</Link>
+						</div>
+
+
+
+						<div class="hover award traveler" style={{"max-width": "400px","width": "60%"}}>
+
+
+
+							<Link target="_blank" href="blogs/blogs.html" class="journal_record">
+							<div class="pic_box covered">
+								<div class="cover grey hidden has_transition_1000_inout"></div>
+								<img class="content hidden has_transition_1000_inout" src="style/images/home/journal2_320x320.jpg"/>
+								</div>
+								<div class="journal_title top_double has_transition_1000">
+									<p><span class="j_title">Happy Women, Happy World</span><span class="j_time"></span></p>
+								</div>
+							</Link>
+
+						</div>
+
+
+						<div class="hover award traveler" style={{"max-width": "400px","width": "60%"}}>	
+							<Link target="_blank" href="blogs/blogs.html" class="journal_record">
+								<div class="pic_box covered">
+								<div class="cover grey hidden has_transition_1000_inout"></div>
+								<img class="content hidden has_transition_1000_inout" src="style/images/home/journal3_320x320.jpg"/>
+								</div>
+								<div class="journal_title top_double has_transition_1000">
+									<p><span class="j_title">Holiday In Nature</span><span class="j_time"></span></p>
+								</div>
+							</Link>
+                        </div>
+
+
+						</div>
+					</div>
+				</div>
+				{/* <!-- rgk org journal post must not delete --> */}
+	
+	
+	
+	
+	
+	
+	
+				{/* <!-- rgk FOR insta mbl start --> */}
+				<div class="row"style={{"display": "none"}}> {/* <!--style={{"display": "none"}} --> */}
+					<div id="latest_journal" style={{"background": "white"}}>  {/* <!-- class="mobile_hidden" --> */}
+						<div class="no_overflow">
+						<h3 class="section_title has_transition_1500">CONNECT SOCIALLY </h3>
+						</div>
+						<div class="journal_container">
+	
+							<Link target="_blank" href="https://www.instagram.com/touchwoodbliss/" class="journal_record">
+								<div class="insta_pic_box covered">
+								<div class="cover grey hidden has_transition_1000_inout"></div>
+								{/* <!-- <img class="content hidden has_transition_1000_inout" src="#" />  -->  */}
+	
+								<script src="https://apps.elfsight.com/p/platform.js" defer=""></script>
+								<div class="elfsight-app-3ef9f662-cf63-4ffc-b4af-022d650cf4f9"></div>
+	
+								</div>
+								<div class="journal_title top_double has_transition_1000">
+									<p><span class="j_title"></span><span class="j_time"></span></p>
+								</div>
+							</Link>
+	
+	
+	
+	
+							
+	
+	
+	
+	
+	
+	
+	
+							
+						</div>
+					</div>
+				</div>
+				{/* <!-- rgk FOR insta mbl end --> */}
+	
+	
+				<div id="weather" style={{"padding": "20px 0", "display": "none"}}>
+								
+								<div id="meteo_box" style={{"max-width": "100%"}}>
+				
+								<div class="row"style={{"display": "none"}}>
+									<div id="weather" style={{"padding-top": "1vw"}}>
+										
+										<div id="days_box" style={{"margin-top": "0px", "max-width": "175px"}}>
+											<div style={{"width": "92.286%","padding-left": "11%"}} class="">
+													<div class=""></div>
+													<div class="button" style={{"text-align": "center"}}>
+														<Link href="https://www.facebook.com/touchwoodbliss/" target="_blank">
+	  <img src="style/images/fb2.png"/></Link>
+					
+					
+														<Link href="https://www.instagram.com/touchwoodbliss/?igshid=9vh16x360dfy" target="_blank">
+	  <img src="style/images/instagram1.png"/></Link>
+										
+													</div>
+											</div>
+										</div>
+										
+									</div>
+								</div>
+								
+								</div>
+					</div>
+	
+		{/* <!-- rgk-spacing-bottom-home --> */}
+	
+					{/* <!-- <div class="row space"> 
+					</div>  -->  */}
+	
+	
+	</div>	
+	
+	
+		</div>
+
+			{/* <!-- RGK-CONTENT-end --> */}
+
+
+
+
+
+<div id="commons"> 
+
+		<div class="row">
+
+					
+		</div>
+	</div>
+
+{/* <!-- INSTAGRAM RGK END-->
+
+{/* <!-- rgk-contacttoindex-end   --> */}
+
+{/* <!-- RGK FOOTER START --> */}
+
+<div id="commons"style={{"display": "none"}}>
+	<div class="row mobile_hidden">
+			<div id="clocks">
+				<div class="clock" timezone="America/New_York">
+					<div class="clock-container">
+						<div id="hour_1" class="clock-hour"></div>
+						<div id="minute_1" class="clock-minute"></div>
+						<div id="second_1" class="clock-second"></div>
+					</div>
+					<div class="clock-shadow">
+						<img src="style/images/home/clock_shadow.png"/>
+					</div>
+					<div class="clock-city">
+						<p>NEW YORK</p>
+					</div>
+					
+				</div>
+				<div class="clock" timezone="Europe/London">
+					<div class="clock-container">
+						<div id="hour_2" class="clock-hour"></div>
+						<div id="minute_2" class="clock-minute"></div>
+						<div id="second_2" class="clock-second"></div>
+					</div>
+					<div class="clock-shadow">
+						<img src="style/images/home/clock_shadow.png"/>
+					</div>
+					<div class="clock-city">
+						<p>LONDON</p>
+					</div>
+				</div>
+				<div class="clock" timezone="Australia/Sydney">
+					<div class="clock-container">
+						<div id="hour_3" class="clock-hour"></div>
+						<div id="minute_3" class="clock-minute"></div>
+						<div id="second_3" class="clock-second"></div>
+					</div>
+					<div class="clock-shadow">
+						<img src="style/images/home/clock_shadow.png"/>
+					</div>
+					<div class="clock-city">
+						<p>SYDNEY</p>
+					</div>
+				</div>
+				<div class="clock main" timezone="Europe/Rome">
+					<div class="clock-container">
+						<div id="hour_4" class="clock-hour"></div>
+						<div id="minute_4" class="clock-minute"></div>
+						<div id="second_4" class="clock-second"></div>
+					</div>
+					<div class="clock-shadow">
+						<img src="style/images/home/clock_shadow.png"/>
+					</div>
+					<div class="clock-city">
+						<p>PRAIANO</p>
+					</div>
+				</div>
+				<div class="clock" timezone="America/Toronto">
+					<div class="clock-container">
+						<div id="hour_5" class="clock-hour"></div>
+						<div id="minute_5" class="clock-minute"></div>
+						<div id="second_5" class="clock-second"></div>
+					</div>
+					<div class="clock-shadow">
+						<img src="style/images/home/clock_shadow.png"/>
+					</div>
+					<div class="clock-city">
+						<p>TORONTO</p>
+					</div>
+				</div>
+				<div class="clock" timezone="America/Sao_Paulo">
+					<div class="clock-container">
+						<div id="hour_6" class="clock-hour"></div>
+						<div id="minute_6" class="clock-minute"></div>
+						<div id="second_6" class="clock-second"></div>
+					</div>
+					<div class="clock-shadow">
+						<img src="style/images/home/clock_shadow.png"/>
+					</div>
+					<div class="clock-city">
+						<p>SAN PAOLO</p>
+					</div>
+				</div>
+				<div class="clock" timezone="Asia/Hong_Kong">
+					<div class="clock-container">
+						<div id="hour_7" class="clock-hour"></div>
+						<div id="minute_7" class="clock-minute"></div>
+						<div id="second_7" class="clock-second"></div>
+					</div>
+					<div class="clock-shadow">
+						<img src="style/images/home/clock_shadow.png"/>
+					</div>
+					<div class="clock-city">
+						<p>HONG KONG</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div id="date">
+				<h4 class="year"></h4>
+				<h4 class="day"></h4>
+			</div>
+		</div>
+		<div class="row">
+			<div id="weather">
+				<div id="meteo_box">
+					<div class="meteo_row">
+						<div class="wind_ico meteo_col animating top_double has_transition_1000">
+							<div class="meteo_ico_big">
+								<img src="#"/>
+							</div>
+							<p class="meteo_stats"></p>
+						</div>
+						<div class="weather_ico meteo_col animating top_double has_transition_1000">
+							<div class="meteo_ico_big">
+								<img src="#"/>
+							</div>
+							<p class="meteo_stats"></p>
+							
+						</div>
+						<div class="sea_ico meteo_col animating top_double has_transition_1000">
+							<div class="meteo_ico_big">
+								<img src="#"/>
+							</div>
+							<p class="meteo_stats"></p>
+						</div>							
+					</div>
+					<div class="meteo_row">
+						<div class="data meteo_col animating top_double has_transition_1000">
+							<div class="wind_direction">
+								<img src="style/images/home/wind_dir.png"/>
+								<p class="meteo_small"></p>
+							</div>
+							<div class="wind_speed">
+								<img src="style/images/home/wind_speed.png"/>
+								<p class="meteo_small"></p>
+							</div>
+						</div>
+						<div class="data meteo_col animating top_double has_transition_1000">
+							
+							<p class="temp_text"><span class="temp_num">12</span> <span class="temp_deg">°</span></p>
+							
+						</div>
+						<div class="data meteo_col animating top_double has_transition_1000">
+							<div class="wave_height">
+								<img src="style/images/home/wave_height.png"/>
+								<p class="meteo_small"><span class="wave_num"></span> M</p>
+							</div>
+						</div>							
+					</div>
+					<div class="hourly_row">
+							<div class="hour_box animating has_transition_1000 top_double">
+								<div class="hour_ico">
+								<img class="has_transition_1000 transform_all" src="#"/>
+								</div>
+								<div class="separator"></div>
+								<div class="active_line has_transition_800"></div>
+								<div class="no_overflow hour_text">
+									<p class="has_transition_1000">00:00</p>
+								</div>
+							</div>
+							<div class="hour_box animating has_transition_1000 top_double">
+								<div class="hour_ico">
+								<img class="has_transition_1000 transform_all" src="#"/>
+								</div>
+								<div class="separator"></div>
+								<div class="active_line has_transition_800"></div>
+								<div class="no_overflow hour_text">
+									<p class="has_transition_1000">03:00</p>
+								</div>
+
+							</div>
+							<div class="hour_box animating has_transition_1000 top_double">
+								<div class="hour_ico">
+								<img class="has_transition_1000 transform_all" src="#"/>
+								</div>
+								<div class="separator"></div>
+								<div class="active_line has_transition_800"></div>
+								<div class="no_overflow hour_text">
+									<p class="has_transition_1000">06:00</p>
+								</div>
+
+							</div>
+							<div class="hour_box animating has_transition_1000 top_double">
+								<div class="hour_ico">
+								<img class="has_transition_1000 transform_all" src="#"/>
+								</div>
+								<div class="separator"></div>
+								<div class="active_line has_transition_800"></div>
+								<div class="no_overflow hour_text">
+									<p class="has_transition_1000">09:00</p>
+								</div>
+
+								
+							</div>
+							<div class="hour_box animating has_transition_1000 top_double">
+								<div class="hour_ico">
+								<img class="has_transition_1000 transform_all" src="#"/>
+								</div>
+								<div class="separator"></div>
+								<div class="active_line has_transition_800"></div>
+								<div class="no_overflow hour_text">
+									<p class="has_transition_1000">12:00</p>
+								</div>
+
+							</div>
+							<div class="hour_box animating has_transition_1000 top_double">
+								<div class="hour_ico">
+								<img class="has_transition_1000 transform_all" src="#"/>
+								</div>
+								<div class="separator"></div>
+								<div class="active_line has_transition_800"></div>
+								<div class="no_overflow hour_text">
+									<p class="has_transition_1000">15:00</p>
+								</div>
+
+							</div>
+							<div class="hour_box animating has_transition_1000 top_double">
+								<div class="hour_ico">
+								<img class="has_transition_1000 transform_all" src="#"/>
+								</div>
+								<div class="separator"></div>
+								<div class="active_line has_transition_800"></div>
+								<div class="no_overflow hour_text">
+									<p class="has_transition_1000">18:00</p>
+								</div>
+
+							</div>
+							<div class="hour_box animating has_transition_1000 top_double">
+								<div class="hour_ico">
+								<img class="has_transition_1000 transform_all" src="#"/>
+								</div>
+								<div class="separator"></div>
+								<div class="active_line has_transition_800"></div>
+								<div class="no_overflow hour_text">
+									<p class="has_transition_1000">21:00</p>
+								</div>
+
+							</div>
+						</div>
+				</div>
+				<div id="days_box">
+					<div class="day_name active">
+						<div class="day_back has_transition_1000"></div>
+						<p>TODAY</p>
+					</div>
+					<div class="day_name">
+						<div class="day_back has_transition_1000"></div>
+						<p></p>
+					</div>
+					<div class="day_name">
+						<div class="day_back has_transition_1000"></div>
+						<p></p>
+					</div>
+					<div class="day_name">
+						<div class="day_back has_transition_1000"></div>
+						<p></p>
+					</div>
+					<div class="day_name">
+						<div class="day_back has_transition_1000"></div>
+						<p></p>
+					</div>
+					<div class="day_name">
+						<div class="day_back has_transition_1000"></div>
+						<p></p>
+					</div>
+					<div class="day_name">
+						<div class="day_back has_transition_1000"></div>
+						<p></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+	<div id="footer" class="mobile_hidden">
+		<div id="sitemap_button">
+			<div class="sitemap_block flexed">
+				<div class="block_title reversed"><div class="no_overflow"><p class="desc_title has_transition_1500">SITEMAP</p></div><div class="no_overflow"><p class="desc_text has_transition_1500">view</p></div></div>
+				<div class="download_item has_transition_800 transform_all">
+					<div class="circle_button bottom ">
+						<div class="back  has_transition_1000 transform_all"></div>
+							<div class="arrow  has_transition_800 transform_all"><img src="style/images/arrow_small.png"/></div>
+					</div>
+				</div>	
+			</div>
+		</div>
+		<div id="footer_panel">
+			<div id="footer_base">
+				<img src="style/images/footer_base.png"/>
+				<div id="footer_base_content">
+					<div class="no_overflow footer_logo">
+						<Link href="index.html">	<img src="style/images/footer_logo.png"/></Link>
+					</div>
+					
+				</div>
+			</div>
+			<div class="footer_text">
+				<p>
+					<img src="style/images/address.png" style={{"width": "12%","padding-bottom": "6%"}}/><b> ADDRESS: </b> <br/>
+					<img src="style/images/block.png"/>Bhavali Dam Road,<br/>
+					<img src="style/images/block.png"/>Bhagatwadi Igatpuri<br/>
+					<img src="style/images/block.png"/>Nashik, <br/>
+					<img src="style/images/block.png"/>Maharashtra - 422403
+				</p>
+			</div>
+	
+			{/* <!-- rgk new footer --> */}
+			<div class="footer_text1">
+				<p>
+					<img src="style/images/phone_ico.png" style={{"padding-bottom": "3%","width": "6%","margin-right": "2%"}}/><b> RESERVATIONS TEAM: </b> <br/>
+					<img src="style/images/block.png"/><b>Leisure Stay</b> : <Link href="tel:07030666222" class=""> 7030666222/444 </Link><br/>
+					<img src="style/images/block.png"/><b>Weddings/ Celebrations</b> : <Link href="tel:07030060622" class="">7030060622/422</Link><br/>
+					<img src="style/images/block.png"/><b>Corporate Bookings</b> : <Link href="tel:07030060522" class="">7030060522/722</Link> <br/>
+					<img src="style/images/block.png"/><b>Reservations Head</b> : <Link href="tel:07030060422" class="">7030060422</Link>
+	
+				</p>
+			</div>
+
+
+			
+				{/* <!-- rgk-PLUGIN-scroll-to-top-start --> */}
+				{/* <!-- partial:index.partial.html --> */}
+                {/* <!-- <Link href="#" id="scroll" style="display: none !important;"><span></span></Link>  -->  */}
+                {/* <!-- partial --> */}
+
+
+  {/* <!-- <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'></script>  -->  */}
+  {/* <!-- <script  src="./script.js"></script>  -->  */}
+  <script src="script-scroll-to-top.js"></script>
+
+               {/* <!-- rgk-PLUGIN-scroll-to-top-end --> */}
+			
+			
+			
+		</div>
+		
+	</div>
+	
+	
+	{/* <!-- <div id="partners" class="mobile_hidden">
+				<img src="style/images/partners/slh.png" />
+				<img src="style/images/partners/virtuoso.png" />
+				<img src="style/images/partners/american_express.png" />
+			</div>  -->  */}
+			<div class="no_overflow copy mobile_hidden">
+			<p><span style={{"font-family":"Geometria"}}>©</span>  Touchwood Blis 2022 <span style={{"opacity":"0.5"}}>|</span> all rights reserved</p>
+			</div>
+	
+	
+	<div id="footer_mobile" class="mobile_only">
+		<div class="row">
+		<div class="footer_logo">
+			<Link href="index.html">	<img src="style/images/footer_logo.png"/></Link>
+					</div>
+		<div class="footer_text">
+				<p>
+					<b> ADDRESS: </b><br/>
+					Bhavali Dam Road,<br/>
+					Bhagatwadi Igatpuri<br/>
+					Nashik, Maharashtra - 422403					
+				</p>
+			</div>
+	
+			<div class="footer_text1">
+				<p>
+					<b> RESERVATIONS TEAM: </b><br/>
+					<b>Leisure Stay</b> : <br/><Link href="tel:07030666222" class=""> 7030666222/444 </Link><br/>
+					<b>Weddings/ Celebrations</b> : <Link href="tel:07030060622" class="">7030060622/422</Link><br/>
+					<b>Corporate Bookings</b> : <Link href="tel:07030060522" class="">7030060522/722</Link><br/>
+					<b>Reservations Head</b> :<br/> <Link href="tel:07030060422" class="">7030060422</Link>
+				</p>
+			</div>
+
+
+
+
+
+	
+				{/* <!-- <Link target="_blank" href="#" class="privacy_link">privacy policy</Link>  -->  */}
+			
+		<p class="mobile_copy"><span style={{"font-family":"Geometria"}}>©</span> Touchwood Bliss 2022<br/><span class="smaller">all rights reserved</span></p>
+		</div>
+	</div>
+	
+	{/* <!-- RGK FOOTER END --> */}	
+
+
+
+
+
+</div>	
+	<div class="iScrollVerticalScrollbar iScrollLoneScrollbar" style={{"position": "absolute", "z-index": "9999", "width": "7px", "bottom": "2px", "top": "2px", "right":"1px", "overflow": "hidden"}}><div class="iScrollIndicator" style={{"box-sizing": "border-box", "position": "absolute", "background": "rgba(0, 0, 0, 0.5)", "border": "1px solid rgba(255, 255, 255, 0.9)", "border-radius": "3px", "width": "100%", "display": "block", "height": "8px", "transform": "translate(0px, 0px) translateZ(0px)"}}></div></div></div>
+
+
+
+
+	{/* <!-- RGK-MAIN-INDEX-PAGE-END --> */}
+
+
+
+
+
+
+
+	
+	<div id="panelDetailController" style={{"pointer-events": "none"}} >
+		<Link href="#" id="panelPrev" class="has_transition_800 top_hidden"><img src="style/images/panel_prev.png"/><p class="panel_text"></p></Link>
+		<Link href="#" id="backToPanels" class="has_transition_800 top_hidden">
+			<div class="back_circle">
+				<div class="line_container">
+				<div class="line _1"></div>
+				<div class="line _2"></div>
+				<div class="line _3"></div>
+				</div>
+			</div>
+		</Link>
+		<Link href="#" id="panelNext" class="has_transition_800 top_hidden"><img src="style/images/panel_next.png"/><p class="panel_text"></p></Link>
+	</div>
+	
+	<div id="panelMobileController" class="has_transition_800 top_hidden mobile_only">
+		<Link href="location.html" id="mobileBack" class="has_transition_800 top_hidden">
+			 back <div class="line_container">
+				<div class="line _1"></div>
+				<div class="line _2"></div>
+				<div class="line _3"></div>
+				</div>
+		</Link>
+		
+		<div class="right_side">
+			<Link href="#" id="mobilePrev" class="has_transition_800 top_hidden">
+				<div class="circle_button left ">
+					<div class="back "></div>
+					<div class="arrow"><img src="style/images/home/tiny_arrow.png"/></div>
+				</div>
+				<p class="controller_text">prev</p>
+			</Link>
+			<Link href="#" id="mobileNext" class="has_transition_800 top_hidden">
+				<p class="controller_text  has_transition_1000">next</p>
+				<div class="circle_button right ">
+							<div class="back "></div>
+							<div class="arrow"><img src="style/images/home/tiny_arrow.png"/></div>
+				</div>
+			</Link>
+		</div>
+	</div>
+	<div id="book_interface" class="overlay_layer hidden has_transition_1000"style={{"display": "none"}}>
+		<div class="white_back hidden_by_scaling_low has_transition_1000"></div>
+		<div class="left_panel hidden has_transition_1000_inout">
+			<div class="no_overflow">
+				<h2 class="overlay_title top_hidden has_transition_1500">BOOK NOW</h2>
+			</div>
+			<div class="diagonal_line hidden has_transition_1000_inout">
+				<div class="_1"></div>
+				<div class="_2"></div>
+			</div>
+		</div>
+		<div class="right_panel">
+			<div id="book_form_container">
+				<div class="form_input date arrival has_transition_800 gldp-el" gldp-id="gldp-606500355"><label for="arrival" class="top_double has_transition_1000">arrival<img src="style/images/calendar.png"/></label><input readonly="" name="arrival" class="top_double has_transition_1000_inout" type="text" id="arrival" value="05/28/2021"/></div>
+				<div class="form_input date departure has_transition_800 gldp-el" gldp-id="gldp-8574687383"><label for="departure" class="top_double has_transition_1000">departure<img src="style/images/calendar.png"/></label><input readonly="" class="top_double has_transition_1000_inout" name="departure" type="text" id="departure" value="05/29/2021"/></div>
+				<div class="form_input people has_transition_800"><label for="people" class="top_double has_transition_1000">guests<img src="style/images/guests.png"/></label><input class="top_double has_transition_600_inout" type="text" id="guests" value="2"/></div>
+			</div>
+			<div id="book_submit" class="has_transition_800">
+				
+				<p class="submit hidden has_transition_1500">submit</p>
+				
+				<div class="circle_button right ">
+					<div class="back hidden_by_scaling_full has_transition_1000 transform_all"></div>
+					<div class="arrow hidden has_transition_800"><img src="style/images/arrow_small.png"/></div>
+				</div>
+			</div>
+			<div id="book_close" class="overlay_close hidden_by_scaling_full has_transition_1000">
+				<div class="menu_close">
+						<div class="line_1 has_transition_800"></div>
+						<div class="line_2 has_transition_800"></div>
+					</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="sitemap_interface" class="overlay_layer hidden has_transition_1000">
+		<div class="white_back hidden_by_scaling_low has_transition_1000"></div>
+		<div class="left_panel hidden has_transition_1000_inout">
+			<div class="no_overflow">
+				<h2 class="overlay_title top_hidden has_transition_1500">SITEMAP</h2>
+			</div>
+			<div class="diagonal_line hidden has_transition_1000_inout">
+				<div class="_1"></div>
+				<div class="_2"></div>
+			</div>
+		</div>
+		<div class="right_panel">
+			<div id="sitemapitem_box">
+			<img class="text_shadow_upper scroll_transition no_opacity" src="style/images/home/text_shadow_upper.png"/>
+			<div class="items_container" style={{"touch-action": "none"}}>
+				<div id="sitemap_scroller" class="scroll_transition"  style={{"transform": "translate(0px, 0px) translateZ(0px)"}}>
+				{/* <!-- <div class="site_chapter">
+					<Link href="home.html" class="chapter_name top_double has_transition_1000 animating"><span class="chapter_number">0.</span>ACCOMMODATION & DINNING<span class="fancy_name">Home</span></Link>
+					<div class="section_separator no_width has_transition_1500_inout">
+						<div class="pointer"></div>
+					</div>
+					
+				</div>  -->  */}
+				<div class="site_chapter">
+					<p class="chapter_name top_double has_transition_1000 animating"><span class="chapter_number">1.</span>STAY &amp; DINING
+						{/* <!-- <span class="fancy_name">Text</span>  -->  */}
+					
+					</p><div class="section_separator no_width has_transition_1500_inout">
+						<div class="pointer"></div>
+					</div>
+
+					<Link href="rooms/courtyard-villas.html" class="chapter_paragraph top_double has_transition_1000 animating">
+						<p class="site_paragraph_name "><span class="site_paragraph_number">1.<span class="bigger">1</span></span>COURTYARD VILLAS
+							{/* <!-- <span class="site_paragraph_sub">text text text</span>  -->  */}
+						</p>
+					</Link>
+										<Link href="rooms/glamping_tents.html" class="chapter_paragraph top_double has_transition_1000 animating">
+						<p class="site_paragraph_name "><span class="site_paragraph_number">1.<span class="bigger">2</span></span>GLAMPING TENTS
+							{/* <!-- <span class="site_paragraph_sub">text text text </span>  -->  */}
+						</p>
+					</Link>
+								
+										<Link href="rooms/farmsyde-villas.html" class="chapter_paragraph top_double has_transition_1000 animating">
+						<p class="site_paragraph_name "><span class="site_paragraph_number">1.<span class="bigger">3</span></span>FARMSYDE VILLAS
+							{/* <!-- <span class="site_paragraph_sub">text text text</span>  -->  */}
+						</p>
+					</Link>
+										<Link href="rooms/restaurant.html" class="chapter_paragraph top_double has_transition_1000 animating">
+						<p class="site_paragraph_name "><span class="site_paragraph_number">1.<span class="bigger">4</span></span>RESTAURANT
+							{/* <!-- <span class="site_paragraph_sub">text text text</span>  -->  */}
+						</p>
+					</Link>
+
+					<Link href="rootscafe.html" class="chapter_paragraph top_double has_transition_1000 animating">
+						<p class="site_paragraph_name "><span class="site_paragraph_number">1.<span class="bigger">5</span></span>ROOTS CAFE
+							{/* <!-- <span class="site_paragraph_sub">text text text</span>  -->  */}
+						</p>
+					</Link>
+										
+				</div>
+				<div class="site_chapter">
+					<p class="chapter_name top_double has_transition_1000 animating"><span class="chapter_number">2.</span>ACTIVITIES &amp; DAY OUTING
+						{/* <!-- <span class="fancy_name">Text text text</span>  -->  */}
+					</p>
+					<div class="section_separator no_width has_transition_1500_inout">
+						<div class="pointer"></div>
+					</div>
+										<Link href="activities/indoor.html" class="chapter_paragraph top_double has_transition_1000 animating">
+						<p class="site_paragraph_name "><span class="site_paragraph_number">2.<span class="bigger">1</span></span>INDOOR
+							{/* <!-- <span class="site_paragraph_sub">the <span class="as_pic">text text text</span> text text text</span>  -->  */}
+						</p>
+					</Link>
+										<Link href="activities/outdoor.html" class="chapter_paragraph top_double has_transition_1000 animating">
+						<p class="site_paragraph_name "><span class="site_paragraph_number">2.<span class="bigger">2</span></span>OUTDOOR
+							{/* <!-- <span class="site_paragraph_sub">our <span class="as_pic">text text text</span> text text text</span>  -->  */}
+						</p>
+					</Link>
+										<Link href="activities/nature.html" class="chapter_paragraph top_double has_transition_1000 animating">
+						<p class="site_paragraph_name "><span class="site_paragraph_number">2.<span class="bigger">3</span></span>NATURE
+							{/* <!-- <span class="site_paragraph_sub">text text text</span>  -->  */}
+						</p>
+					</Link>
+										<Link href="activities/day_outing.html" class="chapter_paragraph top_double has_transition_1000 animating">
+						<p class="site_paragraph_name "><span class="site_paragraph_number">2.<span class="bigger">4</span></span>DAY OUTING
+							{/* <!-- <span class="site_paragraph_sub">text text text</span>  -->  */}
+						</p>
+					</Link>
+
+					<Link href="activities/camping-tents.html" class="chapter_paragraph top_double has_transition_1000 animating">
+						<p class="site_paragraph_name "><span class="site_paragraph_number">2.<span class="bigger">5</span></span>MOUNTAIN CAMPING 
+							{/* <!-- <span class="site_paragraph_sub">text text text</span>  -->  */}
+						</p>
+					</Link>
+										
+				</div>
+				<div class="site_chapter">
+					<p class="chapter_name top_double has_transition_1000 animating"><span class="chapter_number">3.</span>EVENTS &amp; EXPERIENCES
+						{/* <!-- <span class="fancy_name">Text text text</span>  -->  */}
+					</p>
+					<div class="section_separator no_width has_transition_1500_inout">
+						<div class="pointer"></div>
+					</div>
+										<Link href="events/wedding.html" class="chapter_paragraph top_double has_transition_1000 animating">
+						<p class="site_paragraph_name"><span class="site_paragraph_number">3.<span class="bigger">1</span></span>WEDDINGS
+							{/* <!-- <span class="site_paragraph_sub">text text text</span>  -->  */}
+						</p>
+					</Link>
+										<Link href="events/events_experience.html" class="chapter_paragraph top_double has_transition_1000 animating">
+						<p class="site_paragraph_name"><span class="site_paragraph_number">3.<span class="bigger">2</span></span>SPECIAL OCCASIONS
+							{/* <!-- <span class="site_paragraph_sub">text text text</span>  -->  */}
+						</p>
+					</Link>
+										
+				</div>
+
+				<div class="site_chapter">
+					<p class="chapter_name top_double has_transition_1000 animating"><span class="chapter_number">4.</span>MEMBERSHIP
+						{/* <!-- <span class="fancy_name">COMING SOON</span>  -->  */}
+					</p>
+					<div class="section_separator no_width has_transition_1500_inout">
+						<div class="pointer"></div>
+					</div>
+
+					<Link href="#" class="chapter_paragraph top_double has_transition_1000 animating">
+						<p class="site_paragraph_name"><span class="site_paragraph_number">4.<span class="bigger">1</span></span>COMING SOON
+							{/* <!-- <span class="site_paragraph_sub">text text text</span>  -->  */}
+						</p>
+					</Link>
+					
+				</div>
+			</div>
+			</div>
+			<img class="text_shadow_lower" src="style/images/home/text_shadow_lower.png"/>
+			
+			</div>
+			<div id="sitemap_close" class="overlay_close hidden_by_scaling_full has_transition_1000">
+				<div class="menu_close">
+						<div class="line_1 has_transition_800"></div>
+						<div class="line_2 has_transition_800"></div>
+					</div>
+			</div>
+			
+		</div>
+	</div>	
+
+	<div id="credits_interface" class="overlay_layer hidden has_transition_1000">
+		<div class="white_back hidden_by_scaling_low has_transition_1000"></div>
+		<div class="left_panel hidden has_transition_1000_inout">
+			<div class="no_overflow">
+				<h2 class="overlay_title top_hidden has_transition_1500">CREDITS</h2>
+			</div>
+			<div class="diagonal_line hidden has_transition_1000_inout">
+				<div class="_1"></div>
+				<div class="_2"></div>
+			</div>
+		</div>
+		<div class="right_panel">
+			<div id="credits_box">
+				<div class="credit_section">
+					<p class="role top_double animating has_transition_1500">Content Management &amp; Supervision</p>
+					<p class="people top_double animating has_transition_1500">Ms Annarita Aprea</p>
+					<p class="mansion top_double animating has_transition_1500">Casa Angelina Director of Sales&amp;Marketing</p>
+				</div>
+				<div class="credit_section">
+					<p class="role top_double animating has_transition_1500">Work Group Coordination</p>
+					<p class="people top_double animating has_transition_1500">Mr Domenico De Simone</p>
+					<p class="mansion top_double animating has_transition_1500">Casa Angelina Managing Director</p>
+				</div>
+				<div class="credit_section">
+					<p class="role top_double animating has_transition_1500">Art Direction, Storytelling Web Design, UI/UX &amp; Mobile Experience</p>
+					<p class="people top_double animating has_transition_1500">Mediasoul</p>
+				</div>
+				<div class="credit_section">
+					<p class="role top_double animating has_transition_1500">Photography</p>
+					<p class="people top_double animating has_transition_1500">Umberto D’Aniello</p>
+				</div>
+			</div>
+			<div id="credits_close" class="overlay_close hidden_by_scaling_full has_transition_1000">
+				<div class="menu_close">
+						<div class="line_1 has_transition_800"></div>
+						<div class="line_2 has_transition_800"></div>
+					</div>
+			</div>
+			
+		</div>
+	</div>
+			<div id="popLayer" class="">
+		<div id="popBack" class="has_transition_1500"></div>
+		<div id="popContent" class="has_transition_1500">
+
+	</div>
+	</div>
+	<div id="pageCover" class="no_height has_transition_1000_inout"></div>
+
+
+
+	
+
+
+
+
+
+		<script src="script/default/jquery.js"></script>
+		<script src="script/default/plugins5e1f.js?v=2"></script>
+		<script src="script/default/commons2d4c.js?v=2.3"></script>
+		<script src="script/default/mobilea2ef.js?02"></script>
+		<script src="script/default/indexb72f.js?v=04"></script>
+		<script src="script/default/packed08dd.js?v=03"></script>
+		<script src="script/default/panels96a3.js?01"></script>
+		<script src="script/default/panel_detail96a3.js?01"></script>
+		<script src="script/default/galleryb72f.js?v=04"></script>
+		<script src="script/default/weather.js"></script>		
+		<script src="script/default/moment.js"></script>
+		<script src="script/default/moment-timezone-with-data.js"></script>
+		
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+    )
+  }
+
+
+
+  @media (max-width: 960px) {
+    .display {
+      display: block !important;
+    }
+  
+    .main_block_title {
+      height: auto;
+      margin-bottom: 2%;
+    }
+    .main_block_title .block_title {
+      position: relative;
+      top: 2%;
+    }
+  }
+  
+  .display {
+    display: none;
+  }
+  
+  /* mobile css end */
+  
+  /* INDEX CSS START */
+  
+  .footer_text img {
+    /* background-color: red; */
+    width: 10% !important;
+    padding-bottom: 3% !important;
+  }
+  
+  .footer_text1 img {
+    padding-bottom: 3% !important;
+    width: 5% !important;
+    margin-right: 1% !important;
+  }
+  
+  .two_col {
+    column-gap: 75px;
+    /* max-width: 1310px; */
+    /* max-width: 1070px; */
+  
+    max-width: 90%;
+    /* column-count: 2; */
+    text-align: justify;
+  }
+  
+  .paragraph.first {
+    margin-left: 7vw;
+    margin-top: 7vw;
+  }
+  
+  /* home-about us section start */
+  #section_content .paragraph.first {
+    /* width: calc(72% - 106px); rgk-org */
+    /* width: calc(72% - 50px); */
+  
+    /* rgk-new */
+  
+    /* margin-bottom:140px;
+               margin-top:100px; */
+  }
+  
+  .paragraph.first {
+    /* margin-left: 15vw;
+               margin-top: 7.5vw;
+              margin-bottom: 7.5vw; */
+  
+    /* margin-left: 0vh ;
+              margin-top: 0vh ;
+              padding-top: 20vh ;
+              padding-left: 30vh ;
+              padding-right: 30vh ; */
+  }
+  
+  /* HOME CSS END */
+  
+  /* rgk-popup-start */
+  
+  .gdprcookie {
+    /* display: none !important; */
+  }
+  /* rgk-popup-end */
+  
+  @media (max-width: 960px) {
+    .videoPlayer1 {
+      /* left: 19% !important;
+          top: calc(35vh - 88px) !important; */
+      left: 17% !important;
+      top: calc(35vh - 45px) !important;
+      text-align: center;
+    }
+  }
+  
+  /* rgk-new-banner start */
+  #thanks_button {
+    /* height: 30px; */
+    height: 3vh;
+  }
+  #thanks_button span._1 {
+    margin-top: 1%;
+    font-size: 1.5vh;
+  }
+  
+  .newbooknow {
+    /* background-color: aqua; */
+    position: absolute;
+    font-size: 16px;
+    right: 6%;
+    cursor: pointer;
+    top: 2.5vh;
+  }
+  
+  .videoPlayer1 {
+    left: 15%;
+    top: calc(35vh - 120px);
+  }
+  
+  /* screen (rgk- 120%)*/
+  
+  @media (min-height: 650px) and (max-height: 800px) {
+    /* #reopen {
+                      width: 200px;
+                      top: 1vh;
+                      left: -150vh;
+                      background-color: black;
+                      float: left;
+                      position: absolute;
+                       }
+                        .newbooknow 
+                         {
+                           right: 16vh !important;
+                           position: absolute;
+                           top: 3.5vh !important;
+                           background-color: black;
+                          }
+                          .videoPlayer1 
+                             {
+                          left: 15%;
+                          top: calc(35vh - 120px);
+                        
+                         } */
+  }
+  
+  /* rgk- 150% */
+  @media (max-height: 649px) and (min-width: 961px) {
+    /* #reopen 
+                  {
+                   width: 200px;
+                   top: 0vh;
+                   left: 1vh;
+                   font-size: 12px;
+                   line-height: 18px;
+                   background-color: red;
+                   float: left;
+  
+                   }
+                   .newbooknow 
+                   {
+                    background-color: rgba(255, 0, 0, 0.219);
+                    float: right;
+                    left: 165vh;
+                    position: absolute;
+                    top: 4.4vh !important;
+                  }
+                  .videoPlayer1 
+                  {
+                  left: 15%;
+                  top: calc(35vh - 120px);
+                  } */
+  }
+  /* rgk- 150% end*/
+  /* rgk-new-banner end */
+  
+  ._2p3a {
+    min-width: 1000px !important;
+  }
+  
+  /* plugin Facebook Feed */
+  a[href$="https://elfsight.com/social-feed-widget/?utm_source=websites&utm_medium=clients&utm_content=social-feed&utm_term=undefined&utm_campaign=free-widget"]
+  {
+    display: none !important;
+  }
+  .byymCY {
+    display: none !important; /* rgk hide loadmore button */
+  }
+  
+  /*rgk- temp- book now setting start*/
+  
+  .submit {
+    font-size: 1vw;
+    color: #333333;
+    float: left;
+    margin-right: 0.4vw;
+    line-height: 2vw;
+    font-family: "Roboto", sans-serif !important;
+    letter-spacing: 1px;
+  }
+  
+  .circle_button {
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    height: 2vw;
+    width: 2vw;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .circle_button .back {
+    border-radius: 50%;
+    width: 2vw;
+    height: 2vw;
+    /* background: #DDDDDD; */
+    background: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* left: 1px; */
+  }
+  
+  .circle_button .arrow {
+    z-index: 1;
+    position: relative;
+    margin-top: -2px;
+    left: 1px;
+  }
+  
+  /*rgk- temp- book now setting end*/
+  
+  /* rgk-contacttoindex-end  */
+  
+  /* rgk-popup-start */
+  
+  .gdprcookie {
+    /* display: none !important; */
+  }
+  /* rgk-popup-end */
+  
+  .block_25 {
+    align-items: normal; /* org-center */
+    width: 15%; /* org- 25%, 35%;, 33%; */
+  }
+  .page_form {
+    height: inherit; /* org-100% */
+    width: 65%; /* org - 45% */
+    margin-top: 0px; /* org - 180px */
+  }
+  .page_form {
+    width: 100%; /* org - 60%, 75%; */
+  }
+  
+  /* table start */
+  /* #customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    font-size: 14px; 
+  }
+  
+  #customers td, #customers th {
+    border: 1px solid #908d8d;
+    padding: 5px;
+  }
+  
+  #customers tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #customers tr:hover {background-color: #ddd;}
+  
+  #customers th {
+      padding-top: 6px;
+  padding-bottom: 6px;
+    text-align: center;
+    color: #323030;
+    vertical-align: middle;
+  } */
+  
+  /* table end */
+  
+  /* rgk-table2 START */
+  table {
+    /* width: 1000px;  */
+    /*org width: 750px;  */
+    border-collapse: collapse;
+    margin: 0 0 0px; /* rgk-org margin:50px auto; margin: 0 0 80px; */
+  }
+  
+  /* Zebra striping */
+  tr:nth-of-type(odd) {
+    background: transparent; /* background: #eee;  */
+  }
+  
+  th {
+    background: transparent; /* background: #3498db;  */
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  td,
+  th {
+    padding: 10px;
+    border: none; /* rgk-org border: 1px solid #ccc;  */
+    text-align: left;
+    font-size: 18px;
+  }
+  
+  .form_input input[type="text"] {
+    color: #333;
+  }
+  
+  .page_form .form_input input[type="text"] {
+    border-bottom: 1px solid #333;
+  }
+  
+  @media only screen and (max-width: 760px),
+    (min-device-width: 768px) and (max-device-width: 1024px) {
+    table {
+      width: 100%;
+    }
+  
+    /* Force table to not be like tables anymore */
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+      display: block;
+    }
+  
+    /* Hide table headers (but not display: none;, for accessibility) */
+    thead tr {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+    }
+  
+    tr {
+      border: none; /* org border: 1px solid #ccc;  */
+    }
+  
+    td {
+      /* Behave  like a "row" */
+      border: none;
+      border-bottom: none; /* border-bottom: 1px solid #eee;  */
+      position: relative;
+      /* padding-left: 50%;  */
+    }
+  
+    td:before {
+      /* Now like a table header */
+      position: absolute;
+      /* Top/left values mimic padding */
+      top: 6px;
+      left: 6px;
+      width: 45%;
+      padding-right: 10px;
+      white-space: nowrap;
+      /* Label the data */
+      content: attr(data-column);
+      color: #000;
+      font-weight: bold;
+    }
+  }
+  
+  /* rgk-table2 END */
+  
+  .btn-4 {
+    width: 90%;
+    font-size: 15px;
+    border: 2px solid transparent;
+    background: #a3c567;
+    color: #fff;
+  }
+  
+  div.eapps-widget {
+    position: relative;
+  }
+  div.eapps-widget.eapps-widget-show-toolbar:before {
+    position: absolute;
+    content: "";
+    display: block;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+    border: 1px solid transparent;
+    transition: border 0.3s ease;
+    z-index: 1;
+  }
+  .eapps-widget-toolbar {
+    position: absolute;
+    top: -32px;
+    left: 0;
+    right: 0;
+    display: block;
+    z-index: 99999;
+    padding-bottom: 4px;
+    transition: all 0.3s ease;
+    pointer-events: none;
+    opacity: 0;
+  }
+  .eapps-widget:hover .eapps-widget-toolbar {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .eapps-widget-toolbar a {
+    text-decoration: none;
+    box-shadow: none !important;
+  }
+  .eapps-widget-toolbar-panel {
+    border-radius: 6px;
+    background-color: #222;
+    color: #fff;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-align: center;
+    align-items: center;
+    top: 0;
+    position: relative;
+    transition: all 0.3s ease;
+    opacity: 0;
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    box-shadow: 0 0 0 1px hsla(0, 0%, 100%, 0.2);
+    height: 28px;
+  }
+  .eapps-widget:hover .eapps-widget-toolbar-panel {
+    opacity: 1;
+  }
+  .eapps-widget-toolbar-panel-wrapper {
+    width: 100%;
+    position: relative;
+  }
+  .eapps-widget-toolbar-panel-only-you {
+    position: absolute;
+    top: -24px;
+    font-size: 11px;
+    line-height: 14px;
+    color: #9c9c9c;
+    padding: 5px 4px;
+  }
+  .eapps-widget-toolbar-panel-logo {
+    width: 28px;
+    height: 28px;
+    border-right: 1px solid hsla(0, 0%, 100%, 0.2);
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .eapps-widget-toolbar-panel-logo svg {
+    display: block;
+    width: 15px;
+    height: 15px;
+    fill: #f93262;
+  }
+  .eapps-widget-toolbar-panel-edit {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 9px;
+    border-right: 1px solid hsla(0, 0%, 100%, 0.2);
+    color: #fff;
+    text-decoration: none;
+  }
+  .eapps-widget-toolbar-panel-edit-icon {
+    width: 14px;
+    height: 14px;
+    margin-right: 8px;
+  }
+  .eapps-widget-toolbar-panel-edit-icon svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    fill: #fff;
+  }
+  .eapps-widget-toolbar-panel-views {
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .eapps-widget-toolbar-panel-views-label {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    margin-left: 8px;
+  }
+  .eapps-widget-toolbar-panel-views-bar {
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 70px;
+    height: 3px;
+    border-radius: 2px;
+    margin-left: 8px;
+    background-color: hsla(0, 0%, 100%, 0.3);
+  }
+  .eapps-widget-toolbar-panel-views-bar-inner {
+    border-radius: 2px;
+    background-color: #4ad504;
+  }
+  .eapps-widget-toolbar-panel-views-green
+    .eapps-widget-toolbar-panel-views-bar-inner {
+    background-color: #4ad504;
+  }
+  .eapps-widget-toolbar-panel-views-red
+    .eapps-widget-toolbar-panel-views-bar-inner {
+    background-color: #ff4734;
+  }
+  .eapps-widget-toolbar-panel-views-orange
+    .eapps-widget-toolbar-panel-views-bar-inner {
+    background-color: #ffb400;
+  }
+  .eapps-widget-toolbar-panel-views-percent {
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    margin-left: 8px;
+    margin-right: 8px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+  }
+  .eapps-widget-toolbar-panel-views-get-more {
+    padding: 9px 16px;
+    background-color: #f93262;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    border-radius: 0 6px 6px 0;
+  }
+  .eapps-widget-toolbar-panel-share {
+    position: absolute;
+    top: 0;
+    display: inline-block;
+    margin-left: 8px;
+    width: 83px;
+    height: 28px;
+    padding-bottom: 4px;
+    box-sizing: content-box !important;
+  }
+  .eapps-widget-toolbar-panel-share:hover
+    .eapps-widget-toolbar-panel-share-block {
+    opacity: 1;
+    pointer-events: all;
+  }
+  .eapps-widget-toolbar-panel-share-button {
+    padding: 0 18px;
+    height: 28px;
+    background-color: #1c91ff;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    cursor: default;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .eapps-widget-toolbar-panel-share-button svg {
+    display: inline-block;
+    margin-right: 6px;
+    fill: #fff;
+    position: relative;
+    top: -1px;
+  }
+  .eapps-widget-toolbar-panel-share-block {
+    position: absolute;
+    background: #fff;
+    border: 1px solid hsla(0, 0%, 7%, 0.1);
+    border-radius: 10px;
+    width: 209px;
+    top: 32px;
+    transform: translateX(-63px);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  }
+  .eapps-widget-toolbar-panel-share-block:hover {
+    opacity: 1;
+    pointer-events: all;
+  }
+  .eapps-widget-toolbar-panel-share-block-text {
+    color: #111;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 12px 0;
+    text-align: center;
+  }
+  .eapps-widget-toolbar-panel-share-block-text-icon {
+    padding-bottom: 4px;
+  }
+  .eapps-widget-toolbar-panel-share-block-actions {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    border-top: 1px solid hsla(0, 0%, 7%, 0.1);
+  }
+  .eapps-widget-toolbar-panel-share-block-actions-item {
+    width: 33.333333%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 39px;
+    transition: all 0.3s ease;
+    background-color: transparent;
+  }
+  .eapps-widget-toolbar-panel-share-block-actions-item:hover {
+    background-color: #fafafa;
+  }
+  .eapps-widget-toolbar-panel-share-block-actions-item a {
+    width: 100%;
+    height: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .eapps-widget-toolbar-panel-share-block-actions-item-icon {
+    width: 16px;
+    height: 16px;
+    display: block;
+  }
+  .eapps-widget-toolbar-panel-share-block-actions-item-facebook
+    .eapps-widget-toolbar-panel-share-block-actions-item-icon {
+    fill: #3c5a9b;
+  }
+  .eapps-widget-toolbar-panel-share-block-actions-item-twitter
+    .eapps-widget-toolbar-panel-share-block-actions-item-icon {
+    fill: #1ab2e8;
+  }
+  .eapps-widget-toolbar-panel-share-block-actions-item-google
+    .eapps-widget-toolbar-panel-share-block-actions-item-icon {
+    fill: #dd4b39;
+  }
+  .eapps-widget-toolbar-panel-share-block-actions-item:not(:last-child) {
+    border-right: 1px solid hsla(0, 0%, 7%, 0.1);
+  }
+  

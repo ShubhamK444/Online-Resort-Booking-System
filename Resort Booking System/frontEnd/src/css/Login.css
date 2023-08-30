@@ -1,0 +1,31 @@
+
+
+
+
+#ll1{
+    background-color: /*rgb(202, 139, 45)*/#eee;
+    border-radius: 30px;
+    border:1px solid #eee;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#ll2{
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 90px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding:5px 5px 5px 5px ;
+    margin-left: 3px;   
+    padding-right: 300px;
+    min-height: 50px;
+    width: 790px;
+    height:500px
+}
+
+.ll21{
+   height: 500px;
+}
+    

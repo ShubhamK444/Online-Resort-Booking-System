@@ -1,0 +1,14 @@
+#gl:hover{
+transform: scale(1.20);
+box-shadow: 0 0 10px rgba(23, 24, 24, 0.9);
+}
+
+#gl{
+    padding: 5px;
+/* border-bottom-left-radius: 10px;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px; */
+height: 200px;
+width: 1100px;
+}

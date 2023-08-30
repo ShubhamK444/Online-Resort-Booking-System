@@ -1,0 +1,14 @@
+  = for auto correction for old depanendecies
+npm install --save mdbreact == for add ui librery
+npm i @fortawesome/fontawesome-free == 
+npm cache clean --force
+npm i --save @fortawesome/react-fontawesome
+  npm i --save @fortawesome/free-brands-svg-icons 
+  npm i --save @fortawesome/fontawesome-svg-core
+  npm i react-social-icons
+  npm i react-toastify
+
+  react-icons/si
+
+
+  @reduxjs/toolkit;

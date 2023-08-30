@@ -1,0 +1,54 @@
+#footer{ background-color: rgb(178, 177, 180); padding: 20px;}
+.navbar{
+    padding-top
+    : 3%;
+    padding-bottom: 4px;
+    height: 90px;
+    
+  }
+  button{
+    width: 150px;
+    height: 40px;
+  }
+  /* #xx1{
+  padding-left: 12px;
+  padding-bottom: 38px;
+    padding-top: 10px;
+  } */
+  /* #xx2{
+    padding-left: 1px;
+    padding-right: 90px;
+  } */
+  #book{
+    padding-left: 230px;
+    padding-bottom: 13px;
+  }
+  ol, ul, dl {
+    
+    padding-left: 150px;
+  }
+  #xx{
+    
+    padding-left: 15px;
+    font-size: 20px;
+    color: rgb(11, 11, 11);
+    text-decoration: none;
+  }
+  #ul{
+    color: rgb(11, 11, 11);
+    text-decoration: none;
+  }
+  body {
+    /* background: #a8a8a8; */
+    font-family: "Comfortaa", sans-serif;
+    position: relative;
+}
+
+toast.configure{
+  autoClose: 3000, 
+};
+
+
+
+ 
+  

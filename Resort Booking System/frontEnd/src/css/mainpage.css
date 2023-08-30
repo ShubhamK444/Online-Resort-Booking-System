@@ -1,0 +1,34 @@
+
+#img:hover {
+    transform: scale(1.04);
+        box-shadow: 0 0 10px rgba(23, 24, 24, 0.9);
+       }
+
+       #img{
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+
+       }
+       .fluid {
+        padding-left: 30px;
+        max-width: 100%;
+        height: 551px;
+        width: 1250px;
+    }
+
+    .room_type{
+        font-size: 25px;
+      }
+    
+    .dest{
+        font-size: 25px;
+    }
+    .faci{
+        font-size: 25px;
+        text-align: center;
+    }
+    #head{
+       
+    }
